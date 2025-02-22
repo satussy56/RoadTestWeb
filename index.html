@@ -40,22 +40,20 @@
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
           backgroundColor: "#000",
-          imageRendering: "high-quality"  // 高品質レンダリングを指定
+          imageRendering: "high-quality"
         };
         
-        // デバイスピクセル比に応じたスケーリング設定
-        if (window.devicePixelRatio > 1) {
-          container.style.transformOrigin = "0 0";
-          container.style.transform = `scale(${1/window.devicePixelRatio})`;
-          container.style.width = `${window.innerWidth * window.devicePixelRatio}px`;
-          container.style.height = `${window.innerHeight * window.devicePixelRatio}px`;
-        }
-        
-        // スタイルをbodyに適用
+        // スタイルをbodyとコンテナに適用
         Object.assign(document.body.style, bgStyle);
-        
-        // コンテナの背景も設定（モバイル用）
         Object.assign(container.style, bgStyle);
+        
+        // 背景画像のみ高解像度対応
+        if (window.devicePixelRatio > 1) {
+          document.body.style.transformOrigin = "0 0";
+          document.body.style.transform = `scale(${1/window.devicePixelRatio})`;
+          document.body.style.width = `${window.innerWidth * window.devicePixelRatio}px`;
+          document.body.style.height = `${window.innerHeight * window.devicePixelRatio}px`;
+        }
       }
 
       // 背景画像のプリロード

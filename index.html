@@ -25,6 +25,13 @@
     </div>
     <script>
       var canvas = document.querySelector("#unity-canvas");
+      
+      // 背景画像の事前読み込み
+      var bgImage = new Image();
+      bgImage.onload = function() {
+        document.body.style.backgroundImage = "url('../TemplateData/shout-title-dark.png')";
+      };
+      bgImage.src = '../TemplateData/shout-title-dark.png';
 
       // Shows a temporary message banner/ribbon for a few seconds, or
       // a permanent error message on top of the canvas if type=='error'.

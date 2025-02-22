@@ -7,6 +7,23 @@
     <title>Unity Web Player | Road</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
+    <style>
+      #unity-loading-bar {
+        position: absolute;
+        left: 50%;
+        top: 70% !important;  /* 上から70%の位置に変更 */
+        transform: translate(-50%, -50%);
+        display: none;
+      }
+      
+      /* モバイル用に追加の調整 */
+      @media screen and (max-width: 768px) {
+        #unity-loading-bar {
+          top: 75% !important;  /* モバイルではさらに下に */
+          width: 80%;  /* 幅を少し広げる */
+        }
+      }
+    </style>
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">

@@ -39,8 +39,17 @@
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
-          backgroundColor: "#000"
+          backgroundColor: "#000",
+          imageRendering: "high-quality"  // 高品質レンダリングを指定
         };
+        
+        // デバイスピクセル比に応じたスケーリング設定
+        if (window.devicePixelRatio > 1) {
+          container.style.transformOrigin = "0 0";
+          container.style.transform = `scale(${1/window.devicePixelRatio})`;
+          container.style.width = `${window.innerWidth * window.devicePixelRatio}px`;
+          container.style.height = `${window.innerHeight * window.devicePixelRatio}px`;
+        }
         
         // スタイルをbodyに適用
         Object.assign(document.body.style, bgStyle);

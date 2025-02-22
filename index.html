@@ -34,11 +34,19 @@
 
       // 背景画像の設定
       function setBackground() {
-        document.body.style.backgroundImage = "url('TemplateData/shout-title-dark.png')";
-        document.body.style.backgroundSize = "cover";
-        document.body.style.backgroundPosition = "center";
-        document.body.style.backgroundRepeat = "no-repeat";
-        document.body.style.backgroundColor = "#000"; // フォールバック用
+        var bgStyle = {
+          backgroundImage: "url('TemplateData/shout-title-dark.png')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+          backgroundColor: "#000"
+        };
+        
+        // スタイルをbodyに適用
+        Object.assign(document.body.style, bgStyle);
+        
+        // コンテナの背景も設定（モバイル用）
+        Object.assign(container.style, bgStyle);
       }
 
       // 背景画像のプリロード
@@ -60,7 +68,13 @@
         document.body.style.height = "100vh";
         document.body.style.margin = "0";
         document.body.style.padding = "0";
-        setBackground(); // 明示的に背景を再設定
+        
+        // コンテナのスタイル調整
+        container.style.width = "100%";
+        container.style.height = "100%";
+        container.style.position = "fixed";
+        container.style.top = "0";
+        container.style.left = "0";
       }
 
       // Shows a temporary message banner/ribbon for a few seconds, or

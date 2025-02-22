@@ -39,21 +39,14 @@
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
-          backgroundColor: "#000",
-          imageRendering: "high-quality"
+          backgroundColor: "#000"
         };
         
-        // スタイルをbodyとコンテナに適用
+        // スタイルをbodyに適用
         Object.assign(document.body.style, bgStyle);
-        Object.assign(container.style, bgStyle);
         
-        // 背景画像のみ高解像度対応
-        if (window.devicePixelRatio > 1) {
-          document.body.style.transformOrigin = "0 0";
-          document.body.style.transform = `scale(${1/window.devicePixelRatio})`;
-          document.body.style.width = `${window.innerWidth * window.devicePixelRatio}px`;
-          document.body.style.height = `${window.innerHeight * window.devicePixelRatio}px`;
-        }
+        // コンテナの背景も設定（モバイル用）
+        Object.assign(container.style, bgStyle);
       }
 
       // 背景画像のプリロード

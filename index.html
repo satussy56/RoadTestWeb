@@ -7,7 +7,7 @@
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
-  <body>
+  <body style="background: url('TemplateData/shout-title-dark.png') no-repeat center center fixed; background-size: cover;">
     <div id="unity-container" class="unity-desktop">
       <canvas id="unity-canvas" width=960 height=600 tabindex="-1"></canvas>
       <div id="unity-loading-bar">
@@ -26,17 +26,19 @@
     <script>
       var canvas = document.querySelector("#unity-canvas");
       
-      // 背景画像の事前読み込み
+      // 背景画像の事前読み込みと設定
       var bgImage = new Image();
       bgImage.onload = function() {
         document.body.style.backgroundImage = "url('TemplateData/shout-title-dark.png')";
+        document.body.style.backgroundSize = "cover";
+        document.body.style.backgroundPosition = "center center";
+        document.body.style.backgroundRepeat = "no-repeat";
+        document.body.style.backgroundAttachment = "fixed";
+      };
+      bgImage.onerror = function() {
+        console.error('Background image failed to load:', bgImage.src);
       };
       bgImage.src = 'TemplateData/shout-title-dark.png';
-
-      // エラー処理を追加
-      bgImage.onerror = function() {
-        console.error('Background image failed to load');
-      };
 
       // Shows a temporary message banner/ribbon for a few seconds, or
       // a permanent error message on top of the canvas if type=='error'.
@@ -93,9 +95,14 @@
       // JS_FileSystem_Sync() behavior, but in future Unity version, this will be
       // expected to change.
 
+      // モバイル判定時の処理を修正
       if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
-        // Mobile device style: fill the whole browser client area with the game canvas:
-
+        // モバイルデバイス用のスタイル
+        document.body.style.width = "100vw";
+        document.body.style.height = "100vh";
+        document.body.style.margin = "0";
+        document.body.style.padding = "0";
+        
         var meta = document.createElement('meta');
         meta.name = 'viewport';
         meta.content = 'width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, shrink-to-fit=yes';
@@ -103,9 +110,8 @@
         document.querySelector("#unity-container").className = "unity-mobile";
         canvas.className = "unity-mobile";
 
-        // To lower canvas resolution on mobile devices to gain some
-        // performance, uncomment the following line:
-        // config.devicePixelRatio = 1;
+        // モバイル用の背景スタイルを追加
+        document.body.style.backgroundAttachment = "scroll";
 
 
       } else {

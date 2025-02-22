@@ -14,32 +14,32 @@
         top: 75% !important;
         transform: translate(-50%, -50%);
         display: none;
-        width: 60%;
-        min-width: 300px;
+        width: 30%; /* 幅を30%に戻す */
+        min-width: 200px; /* 最小幅も調整 */
       }
       
       #unity-progress-bar-empty {
         width: 100%;
-        height: 20px; /* 高さを明示的に設定 */
-        background: rgba(255, 255, 255, 0.2); /* 背景色を設定 */
-        border-radius: 10px; /* 角を丸く */
-        overflow: hidden; /* 子要素をクリップ */
+        height: 20px;
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 10px;
+        overflow: hidden;
       }
       
       #unity-progress-bar-full {
         width: 0%;
-        height: 100%; /* 親要素いっぱいに */
-        background: white; /* プログレスバーの色 */
-        border-radius: 10px; /* 角を丸く */
-        transition: width 0.1s ease; /* アニメーション効果 */
+        height: 100%;
+        background: #FFD700; /* 黄色に変更（ゴールド） */
+        border-radius: 10px;
+        transition: width 0.1s ease;
       }
       
       /* モバイル用に追加の調整 */
       @media screen and (max-width: 768px) {
         #unity-loading-bar {
           top: 75% !important;
-          width: 80%;
-          min-width: 250px;
+          width: 40%; /* モバイルでの幅も調整 */
+          min-width: 150px;
         }
       }
     </style>

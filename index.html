@@ -3,11 +3,12 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, shrink-to-fit=yes">
     <title>Unity Web Player | Road</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
-  <body style="background: url('TemplateData/shout-title-dark.png') no-repeat center center fixed; background-size: cover;">
+  <body>
     <div id="unity-container" class="unity-desktop">
       <canvas id="unity-canvas" width=960 height=600 tabindex="-1"></canvas>
       <div id="unity-loading-bar">
@@ -24,21 +25,43 @@
       </div>
     </div>
     <script>
+      var container = document.querySelector("#unity-container");
       var canvas = document.querySelector("#unity-canvas");
-      
-      // 背景画像の事前読み込みと設定
-      var bgImage = new Image();
-      bgImage.onload = function() {
+      var loadingBar = document.querySelector("#unity-loading-bar");
+      var progressBarFull = document.querySelector("#unity-progress-bar-full");
+      var fullscreenButton = document.querySelector("#unity-fullscreen-button");
+      var warningBanner = document.querySelector("#unity-warning");
+
+      // 背景画像の設定
+      function setBackground() {
         document.body.style.backgroundImage = "url('TemplateData/shout-title-dark.png')";
         document.body.style.backgroundSize = "cover";
-        document.body.style.backgroundPosition = "center center";
+        document.body.style.backgroundPosition = "center";
         document.body.style.backgroundRepeat = "no-repeat";
-        document.body.style.backgroundAttachment = "fixed";
-      };
-      bgImage.onerror = function() {
-        console.error('Background image failed to load:', bgImage.src);
+        document.body.style.backgroundColor = "#000"; // フォールバック用
+      }
+
+      // 背景画像のプリロード
+      var bgImage = new Image();
+      bgImage.onload = setBackground;
+      bgImage.onerror = function(e) {
+        console.error('Background image failed to load:', e);
+        document.body.style.backgroundColor = "#000"; // エラー時のフォールバック
       };
       bgImage.src = 'TemplateData/shout-title-dark.png';
+
+      // モバイル判定
+      if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
+        container.className = "unity-mobile";
+        canvas.className = "unity-mobile";
+
+        // モバイル用の追加設定
+        document.body.style.width = "100vw";
+        document.body.style.height = "100vh";
+        document.body.style.margin = "0";
+        document.body.style.padding = "0";
+        setBackground(); // 明示的に背景を再設定
+      }
 
       // Shows a temporary message banner/ribbon for a few seconds, or
       // a permanent error message on top of the canvas if type=='error'.
@@ -47,7 +70,6 @@
       // way that non-critical warnings and error messages are presented to the
       // user.
       function unityShowBanner(msg, type) {
-        var warningBanner = document.querySelector("#unity-warning");
         function updateBannerVisibility() {
           warningBanner.style.display = warningBanner.children.length ? 'block' : 'none';
         }
@@ -95,38 +117,13 @@
       // JS_FileSystem_Sync() behavior, but in future Unity version, this will be
       // expected to change.
 
-      // モバイル判定時の処理を修正
-      if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
-        // モバイルデバイス用のスタイル
-        document.body.style.width = "100vw";
-        document.body.style.height = "100vh";
-        document.body.style.margin = "0";
-        document.body.style.padding = "0";
-        
-        var meta = document.createElement('meta');
-        meta.name = 'viewport';
-        meta.content = 'width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, shrink-to-fit=yes';
-        document.getElementsByTagName('head')[0].appendChild(meta);
-        document.querySelector("#unity-container").className = "unity-mobile";
-        canvas.className = "unity-mobile";
-
-        // モバイル用の背景スタイルを追加
-        document.body.style.backgroundAttachment = "scroll";
-
-
-      } else {
-        // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
-        canvas.style.width = "960px";
-        canvas.style.height = "600px";
-      }
-
       document.querySelector("#unity-loading-bar").style.display = "block";
 
       var script = document.createElement("script");
       script.src = loaderUrl;
       script.onload = () => {
         createUnityInstance(canvas, config, (progress) => {
-          document.querySelector("#unity-progress-bar-full").style.width = 100 * progress + "%";
+          progressBarFull.style.width = 100 * progress + "%";
               }).then((unityInstance) => {
                 document.querySelector("#unity-loading-bar").style.display = "none";
                 document.querySelector("#unity-fullscreen-button").onclick = () => {

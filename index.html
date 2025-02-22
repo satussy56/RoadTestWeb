@@ -11,16 +11,23 @@
       #unity-loading-bar {
         position: absolute;
         left: 50%;
-        top: 70% !important;  /* 上から70%の位置に変更 */
+        top: 75% !important;
         transform: translate(-50%, -50%);
         display: none;
+        width: 60%; /* プログレスバー全体の幅を設定 */
+        min-width: 300px; /* 最小幅を設定 */
+      }
+      
+      #unity-progress-bar-empty {
+        width: 100%; /* 親要素いっぱいに広げる */
       }
       
       /* モバイル用に追加の調整 */
       @media screen and (max-width: 768px) {
         #unity-loading-bar {
-          top: 75% !important;  /* モバイルではさらに下に */
-          width: 80%;  /* 幅を少し広げる */
+          top: 75% !important;
+          width: 80%; /* モバイルではより広く */
+          min-width: 250px;
         }
       }
     </style>

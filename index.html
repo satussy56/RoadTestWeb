@@ -14,8 +14,8 @@
         top: 75% !important;
         transform: translate(-50%, -50%);
         display: none;
-        width: 30%; /* 幅を30%に戻す */
-        min-width: 200px; /* 最小幅も調整 */
+        width: 30%;
+        min-width: 200px;
       }
       
       #unity-progress-bar-empty {
@@ -24,12 +24,16 @@
         background: rgba(255, 255, 255, 0.2);
         border-radius: 10px;
         overflow: hidden;
+        position: relative;
       }
       
       #unity-progress-bar-full {
+        position: absolute;
+        left: 0;
+        top: 0;
         width: 0%;
         height: 100%;
-        background: #FFD700; /* 黄色に変更（ゴールド） */
+        background: #FFD700;
         border-radius: 10px;
         transition: width 0.1s ease;
       }
@@ -38,7 +42,7 @@
       @media screen and (max-width: 768px) {
         #unity-loading-bar {
           top: 75% !important;
-          width: 40%; /* モバイルでの幅も調整 */
+          width: 40%;
           min-width: 150px;
         }
       }

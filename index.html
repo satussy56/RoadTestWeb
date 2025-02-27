@@ -4,9 +4,13 @@
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, shrink-to-fit=yes">
-    <title>Unity Web Player | Road</title>
+    <title>Unity Web Player | {{{ PRODUCT_NAME }}}</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
+#if SHOW_DIAGNOSTICS
+    <link rel="stylesheet" href="<<<TemplateData/diagnostics.css>>>">
+    <script src="<<<TemplateData/diagnostics.js>>>"></script>
+#endif
     <style>
       #unity-loading-bar {
         position: absolute;
@@ -47,29 +51,12 @@
           min-width: 150px;
         }
       }
-      
-      #game-container {
-        display: none;  /* 最初はゲーム画面を非表示 */
-        width: 100%;
-        height: 100%;
-      }
 
-      #title-screen {
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background-image: url('TemplateData/shout-title-dark.png');
-        background-size: cover;
-        background-position: center;
-      }
-      
       #start-button {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
         padding: 15px 30px;
         font-size: 24px;
         background: #FFD700;
@@ -77,52 +64,43 @@
         border-radius: 10px;
         color: #000;
         cursor: pointer;
+        display: none;  /* 初期状態は非表示 */
         transition: all 0.3s ease;
       }
-      
+
       #start-button:hover {
         background: #FFC000;
-        transform: scale(1.1);
-      }
-      
-      /* モバイル用調整 */
-      @media screen and (max-width: 768px) {
-        #start-button {
-          padding: 12px 24px;
-          font-size: 20px;
-        }
+        transform: translate(-50%, -50%) scale(1.1);
       }
     </style>
   </head>
   <body>
-    <div id="title-screen">
-      <button id="start-button">START</button>
-    </div>
-    
-    <div id="game-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=960 height=600 tabindex="-1"></canvas>
+    <div id="unity-container" class="unity-desktop">
+      <canvas id="unity-canvas" width={{{ WIDTH }}} height={{{ HEIGHT }}} tabindex="-1"></canvas>
       <div id="unity-loading-bar">
         <div id="unity-progress-bar-empty">
           <div id="unity-progress-bar-full"></div>
         </div>
       </div>
+      <button id="start-button">START</button>
       <div id="unity-warning"> </div>
       <div id="unity-footer">
         <div id="unity-logo-title-footer"></div>
         <div id="unity-fullscreen-button"></div>
-        <div id="unity-build-title">Road</div>
+#if SHOW_DIAGNOSTICS
+        <img id="diagnostics-icon" src="TemplateData/webmemd-icon.png">
+#endif
+        <div id="unity-build-title">{{{ PRODUCT_NAME }}}</div>
       </div>
     </div>
     <script>
-      var titleScreen = document.querySelector("#title-screen");
-      var gameContainer = document.querySelector("#game-container");
+      var container = document.querySelector("#unity-container");
       var canvas = document.querySelector("#unity-canvas");
       var loadingBar = document.querySelector("#unity-loading-bar");
       var progressBarFull = document.querySelector("#unity-progress-bar-full");
       var fullscreenButton = document.querySelector("#unity-fullscreen-button");
       var warningBanner = document.querySelector("#unity-warning");
       var startButton = document.querySelector("#start-button");
-      var unityInstanceGlobal = null;
 
       // 背景画像の設定
       function setBackground() {
@@ -138,7 +116,7 @@
         Object.assign(document.body.style, bgStyle);
         
         // コンテナの背景も設定（モバイル用）
-        Object.assign(gameContainer.style, bgStyle);
+        Object.assign(container.style, bgStyle);
       }
 
       // 背景画像のプリロード
@@ -152,7 +130,7 @@
 
       // モバイル判定
       if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
-        gameContainer.className = "unity-mobile";
+        container.className = "unity-mobile";
         canvas.className = "unity-mobile";
 
         // モバイル用の追加設定
@@ -162,11 +140,11 @@
         document.body.style.padding = "0";
         
         // コンテナのスタイル調整
-        gameContainer.style.width = "100%";
-        gameContainer.style.height = "100%";
-        gameContainer.style.position = "fixed";
-        gameContainer.style.top = "0";
-        gameContainer.style.left = "0";
+        container.style.width = "100%";
+        container.style.height = "100%";
+        container.style.position = "fixed";
+        container.style.top = "0";
+        container.style.left = "0";
       }
 
       // Shows a temporary message banner/ribbon for a few seconds, or
@@ -194,16 +172,24 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/RoadWeb.loader.js";
+      var loaderUrl = buildUrl + "/{{{ LOADER_FILENAME }}}";
       var config = {
         arguments: [],
-        dataUrl: buildUrl + "/RoadWeb.data.unityweb",
-        frameworkUrl: buildUrl + "/RoadWeb.framework.js.unityweb",
-        codeUrl: buildUrl + "/RoadWeb.wasm.unityweb",
+        dataUrl: buildUrl + "/{{{ DATA_FILENAME }}}",
+        frameworkUrl: buildUrl + "/{{{ FRAMEWORK_FILENAME }}}",
+#if USE_THREADS
+        workerUrl: buildUrl + "/{{{ WORKER_FILENAME }}}",
+#endif
+#if USE_WASM
+        codeUrl: buildUrl + "/{{{ CODE_FILENAME }}}",
+#endif
+#if SYMBOLS_FILENAME
+        symbolsUrl: buildUrl + "/{{{ SYMBOLS_FILENAME }}}",
+#endif
         streamingAssetsUrl: "StreamingAssets",
-        companyName: "DefaultCompany",
-        productName: "Road",
-        productVersion: "0.1.0",
+        companyName: {{{ JSON.stringify(COMPANY_NAME) }}},
+        productName: {{{ JSON.stringify(PRODUCT_NAME) }}},
+        productVersion: {{{ JSON.stringify(PRODUCT_VERSION) }}},
         showBanner: unityShowBanner,
       };
 
@@ -231,20 +217,53 @@
         createUnityInstance(canvas, config, (progress) => {
           progressBarFull.style.width = 100 * progress + "%";
         }).then((unityInstance) => {
-          unityInstanceGlobal = unityInstance;
           document.querySelector("#unity-loading-bar").style.display = "none";
-          
-          // スタートボタンのクリックイベント
-          startButton.onclick = () => {
-            titleScreen.style.display = "none";  // タイトル画面を非表示
-            gameContainer.style.display = "block";  // ゲーム画面を表示
-            unityInstance.SendMessage("GameController", "StartGame");
+          startButton.style.display = "block";  // ロード完了後にボタンを表示
+#if SHOW_DIAGNOSTICS
+          document.getElementById("diagnostics-icon").onclick = () => {
+            unityDiagnostics.openDiagnosticsDiv(unityInstance.GetMetricsInfo);
           };
-
+#endif
           document.querySelector("#unity-fullscreen-button").onclick = () => {
             unityInstance.SetFullscreen(1);
           };
 
+          startButton.onclick = () => {
+            startButton.style.display = "none";  // ボタンを非表示
+            canvas.focus();  // キャンバスにフォーカス
+          };
+
+#if DEVELOPMENT_PLAYER
+          // Unloading web content from DOM so that browser GC can run can be tricky to get right.
+          // This code snippet shows how to correctly implement a Unity content Unload mechanism to a web page.
+
+          // Unloading Unity content enables a web page to reclaim the memory used by Unity, e.g. for
+          // the purpose of later loading another Unity content instance on the _same_ web page.
+
+          // When using this functionality, take caution to carefully make sure to clear all JavaScript code,
+          // DOM element and event handler references to the old content you may have retained, or
+          // otherwise the browser's garbage collector will be unable to reclaim the old page.
+
+          // N.b. Unity content does _not_ need to be manually unloaded when the user is navigating away from
+          // the current page to another web page. The browser will take care to clear memory of old visited
+          // pages automatically. This functionality is only needed if you want to switch between loading
+          // multiple Unity builds on a single web page.
+          var quit = document.createElement("button");
+          quit.style = "margin-left: 5px; background-color: lightgray; border: none; padding: 5px; cursor: pointer";
+          quit.innerHTML = "Unload";
+          document.querySelector("#unity-build-title").appendChild(quit);
+          quit.onclick = () => {
+            // Quit Unity application execution
+            unityInstance.Quit().then(() => {
+              // Remove DOM elements from the page so GC can run
+              document.querySelector("#unity-container").remove();
+              canvas = null;
+              // Remover script elements from the page so GC can run
+              script.remove();
+              script = null;
+            });
+          };
+#endif
         }).catch((message) => {
           alert(message);
         });

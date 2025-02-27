@@ -7,6 +7,10 @@
     <title>Unity Web Player | Road</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
+    <!-- #if SHOW_DIAGNOSTICS -->
+    <link rel="stylesheet" href="TemplateData/diagnostics.css">
+    <script src="TemplateData/diagnostics.js"></script>
+    <!-- #endif -->
     <style>
       #unity-loading-bar {
         position: absolute;
@@ -89,6 +93,34 @@
         height: 38px;
         background: rgba(0, 0, 0, 0.5);
         z-index: 10;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 10px;
+      }
+
+      #unity-logo-title-footer {
+        float: left;
+        width: 38px;
+        height: 38px;
+        background: url('TemplateData/unity-logo-dark.png') no-repeat center;
+      }
+
+      #unity-fullscreen-button {
+        float: right;
+        width: 38px;
+        height: 38px;
+        background: url('TemplateData/fullscreen-button.png') no-repeat center;
+        cursor: pointer;
+      }
+
+      #unity-build-title {
+        float: right;
+        margin-right: 10px;
+        line-height: 38px;
+        font-family: arial;
+        font-size: 18px;
+        color: #fff;
       }
 
       /* モバイル用のスタイルも調整 */
@@ -109,7 +141,7 @@
         border-radius: 10px;
         color: #000;
         cursor: pointer;
-        display: none;  /* 初期状態は非表示 */
+        display: none;
         transition: all 0.3s ease;
       }
 
@@ -220,7 +252,15 @@
         arguments: [],
         dataUrl: buildUrl + "/RoadWeb.data.unityweb",
         frameworkUrl: buildUrl + "/RoadWeb.framework.js.unityweb",
+        // #if USE_THREADS
+        workerUrl: buildUrl + "/",
+        // #endif
+        // #if USE_WASM
         codeUrl: buildUrl + "/RoadWeb.wasm.unityweb",
+        // #endif
+        // #if SYMBOLS_FILENAME
+        symbolsUrl: buildUrl + "/",
+        // #endif
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "Road",
@@ -253,17 +293,42 @@
           progressBarFull.style.width = 100 * progress + "%";
         }).then((unityInstance) => {
           document.querySelector("#unity-loading-bar").style.display = "none";
-          startButton.style.display = "block";  // ロード完了後にボタンを表示
+          startButton.style.display = "block";
+
+          // #if SHOW_DIAGNOSTICS
+          document.getElementById("diagnostics-icon").onclick = () => {
+            unityDiagnostics.openDiagnosticsDiv(unityInstance.GetMetricsInfo);
+          };
+          // #endif
+
           document.querySelector("#unity-fullscreen-button").onclick = () => {
             unityInstance.SetFullscreen(1);
           };
 
           startButton.onclick = () => {
-            loadingScreen.style.display = "none";  // ロード画面を非表示
-            gameScreen.style.display = "block";    // ゲーム画面を表示
-            canvas.focus();  // キャンバスにフォーカス
+            loadingScreen.style.display = "none";
+            gameScreen.style.display = "block";
+            canvas.focus();
           };
 
+          // #if DEVELOPMENT_PLAYER
+          // Development player code...
+          var quit = document.createElement("button");
+          quit.style = "margin-left: 5px; background-color: lightgray; border: none; padding: 5px; cursor: pointer";
+          quit.innerHTML = "Unload";
+          document.querySelector("#unity-build-title").appendChild(quit);
+          quit.onclick = () => {
+            // Quit Unity application execution
+            unityInstance.Quit().then(() => {
+              // Remove DOM elements from the page so GC can run
+              document.querySelector("#unity-container").remove();
+              canvas = null;
+              // Remover script elements from the page so GC can run
+              script.remove();
+              script = null;
+            });
+          };
+          // #endif
         }).catch((message) => {
           alert(message);
         });

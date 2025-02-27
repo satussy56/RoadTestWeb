@@ -66,27 +66,29 @@
 
       #game-screen {
         display: none;
-        position: absolute;
+        position: fixed;
         left: 0;
         top: 0;
-        width: 100%;
-        height: 100%;
+        width: 100vw;
+        height: 100vh;
         background: #000;
         z-index: 1;
+        overflow: hidden;
       }
 
       #unity-container {
-        position: absolute;
-        width: 100%;
-        height: 100%;
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
         left: 0;
         top: 0;
+        overflow: hidden;
       }
 
       #unity-canvas {
-        position: absolute;
-        width: 100%;
-        height: 100%;
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
         background: #000;
         left: 0;
         top: 0;
@@ -256,23 +258,18 @@
       var buildUrl = "Build";
       var loaderUrl = buildUrl + "/RoadWeb.loader.js";
       var config = {
-        arguments: [],
         dataUrl: buildUrl + "/RoadWeb.data.unityweb",
         frameworkUrl: buildUrl + "/RoadWeb.framework.js.unityweb",
-        // #if USE_THREADS
-        workerUrl: buildUrl + "/",
-        // #endif
         // #if USE_WASM
         codeUrl: buildUrl + "/RoadWeb.wasm.unityweb",
-        // #endif
-        // #if SYMBOLS_FILENAME
-        symbolsUrl: buildUrl + "/",
         // #endif
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "Road",
         productVersion: "0.1.0",
         showBanner: unityShowBanner,
+        devicePixelRatio: 1,
+        matchWebGLToCanvasSize: true
       };
 
       // By default, Unity keeps WebGL canvas render target size matched with
@@ -320,27 +317,30 @@
           startButton.onclick = () => {
             loadingScreen.style.display = "none";
             gameScreen.style.display = "block";
+            
+            function resizeGame() {
+              var windowWidth = window.innerWidth;
+              var windowHeight = window.innerHeight;
+              
+              canvas.width = windowWidth * window.devicePixelRatio;
+              canvas.height = windowHeight * window.devicePixelRatio;
+              canvas.style.width = windowWidth + 'px';
+              canvas.style.height = windowHeight + 'px';
+              
+              if (unityInstance) {
+                unityInstance.SendMessage('GameController', 'OnWindowResize');
+              }
+            }
+
+            resizeGame();
+            window.addEventListener('resize', resizeGame);
             canvas.focus();
-            // Unityのキャンバスのサイズを正しく設定
-            resizeCanvas();
           };
 
-          // キャンバスのリサイズ処理を追加
-          function resizeCanvas() {
-            var windowWidth = window.innerWidth;
-            var windowHeight = window.innerHeight;
-            canvas.width = windowWidth;
-            canvas.height = windowHeight;
-          }
-
-          // ウィンドウリサイズ時にキャンバスもリサイズ
-          window.addEventListener('resize', resizeCanvas);
-
-          // 初期表示時のスタイル設定
-          document.body.style.margin = '0';
-          document.body.style.padding = '0';
-          document.body.style.overflow = 'hidden';
-          canvas.style.display = 'block';
+          // CSSの調整
+          canvas.style.position = 'absolute';
+          canvas.style.top = '0';
+          canvas.style.left = '0';
 
           // #if DEVELOPMENT_PLAYER
           // Development player code...

@@ -10,6 +10,9 @@ body {
     position: absolute;
     width: 100%;
     height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #unity-container.unity-desktop { 
@@ -56,23 +59,18 @@ body {
 }
 
 #unity-footer { 
-    position: absolute;
+    position: relative;
     bottom: 0;
-    left: 0;
     width: 100%;
-    height: 38px;
-    background: rgba(0, 0, 0, 0.5);
-    z-index: 10;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 10px;
 }
 
 .unity-mobile #unity-footer { 
     display: none 
 }
 
+#unity-logo-title-footer { float:left; width: 102px; height: 38px; background: url('unity-logo-title-footer.png') no-repeat center }
+#unity-build-title { float: right; margin-right: 10px; line-height: 38px; font-family: arial; font-size: 18px }
+#unity-fullscreen-button { cursor:pointer; float: right; width: 38px; height: 38px; background: url('fullscreen-button.png') no-repeat center }
 #unity-warning { 
     position: absolute; 
     left: 50%; 
@@ -81,27 +79,6 @@ body {
     background: white; 
     padding: 10px; 
     display: none 
-}
-
-#unity-logo-title-footer { 
-    width: 38px; 
-    height: 38px; 
-    background: url('unity-logo-dark.png') no-repeat center;
-}
-
-#unity-fullscreen-button { 
-    width: 38px; 
-    height: 38px; 
-    background: url('fullscreen-button.png') no-repeat center;
-    cursor: pointer;
-}
-
-#unity-build-title { 
-    margin-right: 10px;
-    line-height: 38px;
-    font-family: arial;
-    font-size: 18px;
-    color: #fff;
 }
 
 #loading-screen {

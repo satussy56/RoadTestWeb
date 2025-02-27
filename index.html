@@ -72,17 +72,24 @@
         width: 100%;
         height: 100%;
         background: #000;
+        z-index: 1;
       }
 
       #unity-container {
         position: absolute;
         width: 100%;
         height: 100%;
+        left: 0;
+        top: 0;
       }
 
       #unity-canvas {
+        position: absolute;
         width: 100%;
         height: 100%;
+        background: #000;
+        left: 0;
+        top: 0;
       }
 
       #unity-footer {
@@ -314,7 +321,26 @@
             loadingScreen.style.display = "none";
             gameScreen.style.display = "block";
             canvas.focus();
+            // Unityのキャンバスのサイズを正しく設定
+            resizeCanvas();
           };
+
+          // キャンバスのリサイズ処理を追加
+          function resizeCanvas() {
+            var windowWidth = window.innerWidth;
+            var windowHeight = window.innerHeight;
+            canvas.width = windowWidth;
+            canvas.height = windowHeight;
+          }
+
+          // ウィンドウリサイズ時にキャンバスもリサイズ
+          window.addEventListener('resize', resizeCanvas);
+
+          // 初期表示時のスタイル設定
+          document.body.style.margin = '0';
+          document.body.style.padding = '0';
+          document.body.style.overflow = 'hidden';
+          canvas.style.display = 'block';
 
           // #if DEVELOPMENT_PLAYER
           // Development player code...

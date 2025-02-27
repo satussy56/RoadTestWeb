@@ -296,9 +296,12 @@
           startButton.style.display = "block";
 
           // #if SHOW_DIAGNOSTICS
-          document.getElementById("diagnostics-icon").onclick = () => {
-            unityDiagnostics.openDiagnosticsDiv(unityInstance.GetMetricsInfo);
-          };
+          const diagnosticsIcon = document.getElementById("diagnostics-icon");
+          if (diagnosticsIcon) {  // 要素が存在する場合のみ実行
+            diagnosticsIcon.onclick = () => {
+              unityDiagnostics.openDiagnosticsDiv(unityInstance.GetMetricsInfo);
+            };
+          }
           // #endif
 
           document.querySelector("#unity-fullscreen-button").onclick = () => {

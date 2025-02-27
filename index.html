@@ -43,7 +43,6 @@
         vertical-align: top;
       }
       
-      /* モバイル用に追加の調整 */
       @media screen and (max-width: 768px) {
         #unity-loading-bar {
           top: 75% !important;
@@ -61,7 +60,7 @@
         background-image: url('TemplateData/shout-title-dark.png');
         background-size: cover;
         background-position: center;
-        z-index: 100;
+        z-index: 1000;
       }
 
       #game-screen {
@@ -72,8 +71,7 @@
         width: 100vw;
         height: 100vh;
         background: #000;
-        z-index: 1;
-        overflow: hidden;
+        z-index: 900;
       }
 
       #unity-container {
@@ -83,15 +81,16 @@
         left: 0;
         top: 0;
         overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
 
       #unity-canvas {
-        position: fixed;
-        width: 100vw;
-        height: 100vh;
+        position: relative;
+        width: 100%;
+        height: 100%;
         background: #000;
-        left: 0;
-        top: 0;
       }
 
       #unity-footer {
@@ -101,7 +100,7 @@
         width: 100%;
         height: 38px;
         background: rgba(0, 0, 0, 0.5);
-        z-index: 10;
+        z-index: 4;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -260,15 +259,13 @@
       var config = {
         dataUrl: buildUrl + "/RoadWeb.data.unityweb",
         frameworkUrl: buildUrl + "/RoadWeb.framework.js.unityweb",
-        // #if USE_WASM
         codeUrl: buildUrl + "/RoadWeb.wasm.unityweb",
-        // #endif
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "Road",
         productVersion: "0.1.0",
         showBanner: unityShowBanner,
-        devicePixelRatio: 1,
+        devicePixelRatio: window.devicePixelRatio || 1,
         matchWebGLToCanvasSize: true
       };
 
@@ -319,14 +316,24 @@
             gameScreen.style.display = "block";
             
             function resizeGame() {
-              var windowWidth = window.innerWidth;
-              var windowHeight = window.innerHeight;
+              var container = document.querySelector("#unity-container");
+              var canvas = document.querySelector("#unity-canvas");
               
-              canvas.width = windowWidth * window.devicePixelRatio;
-              canvas.height = windowHeight * window.devicePixelRatio;
-              canvas.style.width = windowWidth + 'px';
-              canvas.style.height = windowHeight + 'px';
+              // アスペクト比を維持しながらリサイズ
+              var targetRatio = 16 / 9; // または必要なアスペクト比
+              var currentRatio = window.innerWidth / window.innerHeight;
               
+              if (currentRatio > targetRatio) {
+                // 画面が横長の場合
+                canvas.style.height = '100vh';
+                canvas.style.width = (window.innerHeight * targetRatio) + 'px';
+              } else {
+                // 画面が縦長の場合
+                canvas.style.width = '100vw';
+                canvas.style.height = (window.innerWidth / targetRatio) + 'px';
+              }
+              
+              // Unity側に通知
               if (unityInstance) {
                 unityInstance.SendMessage('GameController', 'OnWindowResize');
               }

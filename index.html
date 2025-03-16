@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
   </head>
   <body>
-    <div id="unity-container" class="unity-desktop" style="display: none;">
+    <div id="unity-container" class="unity-desktop">
       <canvas id="unity-canvas" width=960 height=600 tabindex="-1"></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
@@ -25,9 +25,9 @@
       </div>
     </div>
 
-    <button id="toggle-view-button">ゲームを表示</button>
+    <button id="toggle-view-button">切り替え</button>
 
-    <div id="html-container">
+    <div id="html-container" style="display: none;">
       <div style="
         padding: 20px; 
         text-align: center; 
@@ -46,22 +46,14 @@
       var unityContainer = document.querySelector("#unity-container");
       var htmlContainer = document.querySelector("#html-container");
       var toggleButton = document.querySelector("#toggle-view-button");
-      var unityInstance = null;
-      
-      // 初期状態を設定
-      unityContainer.style.display = "none";
-      htmlContainer.style.display = "block";
-      toggleButton.textContent = "ゲームを表示";
       
       toggleButton.onclick = function() {
-        if (unityContainer.style.display === "none") {
-          unityContainer.style.display = "block";
-          htmlContainer.style.display = "none";
-          toggleButton.textContent = "メニューに戻る";
-        } else {
+        if (unityContainer.style.display !== "none") {
           unityContainer.style.display = "none";
           htmlContainer.style.display = "block";
-          toggleButton.textContent = "ゲームを表示";
+        } else {
+          unityContainer.style.display = "block";
+          htmlContainer.style.display = "none";
         }
       };
 
@@ -150,8 +142,7 @@
       script.onload = () => {
         createUnityInstance(canvas, config, (progress) => {
           document.querySelector("#unity-progress-bar-full").style.width = 100 * progress + "%";
-              }).then((instance) => {
-                unityInstance = instance;
+              }).then((unityInstance) => {
                 document.querySelector("#unity-loading-bar").style.display = "none";
                 document.querySelector("#unity-fullscreen-button").onclick = () => {
                   unityInstance.SetFullscreen(1);

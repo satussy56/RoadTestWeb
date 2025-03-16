@@ -46,6 +46,12 @@
       var unityContainer = document.querySelector("#unity-container");
       var htmlContainer = document.querySelector("#html-container");
       var toggleButton = document.querySelector("#toggle-view-button");
+      var unityInstance = null;
+      
+      // 初期状態を設定
+      unityContainer.style.display = "none";
+      htmlContainer.style.display = "block";
+      toggleButton.textContent = "ゲームを表示";
       
       toggleButton.onclick = function() {
         if (unityContainer.style.display === "none") {
@@ -58,9 +64,6 @@
           toggleButton.textContent = "ゲームを表示";
         }
       };
-
-      // 初期状態でボタンのテキストを設定
-      toggleButton.textContent = "ゲームを表示";
 
       // Shows a temporary message banner/ribbon for a few seconds, or
       // a permanent error message on top of the canvas if type=='error'.
@@ -147,7 +150,8 @@
       script.onload = () => {
         createUnityInstance(canvas, config, (progress) => {
           document.querySelector("#unity-progress-bar-full").style.width = 100 * progress + "%";
-              }).then((unityInstance) => {
+              }).then((instance) => {
+                unityInstance = instance;
                 document.querySelector("#unity-loading-bar").style.display = "none";
                 document.querySelector("#unity-fullscreen-button").onclick = () => {
                   unityInstance.SetFullscreen(1);

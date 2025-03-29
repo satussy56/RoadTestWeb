@@ -668,7 +668,7 @@
         },
         {
             "noteName": 2,
-            "noteOctave": 4,
+            "noteOctave": 5,
             "time": 33.0,
             "noteLength": 0.1875,
             "beatIndex": 88.0,
@@ -804,11 +804,11 @@
         },
         {
             "noteName": 4,
-            "noteOctave": 4,
+            "noteOctave": 5,
             "time": 34.5,
             "noteLength": 0.1875,
             "beatIndex": 92.0,
-            "beatLengthIndex": 0.5
+            "beatLengthIndex": 1.0
         },
         {
             "noteName": 5,

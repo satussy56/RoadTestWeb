@@ -1,78 +1,74 @@
 <!doctype html>
 <meta charset="utf-8">
-<title>WebM → PNG Frames (with Alpha)</title>
+<title>WebM → PNG (Alpha)</title>
 <style>
-  body { font: 14px/1.5 system-ui, -apple-system, Segoe UI, Roboto, sans-serif; padding: 24px; }
-  label { display:block; margin:8px 0 4px; }
-  input[type=text], input[type=number] { width: 100%; padding: 8px; }
-  button { padding: 8px 14px; margin-top: 12px; }
-  #log { margin-top: 12px; white-space: pre; background:#f6f6f6; padding:10px; border-radius:8px; }
+  body{font:14px system-ui;padding:20px} label{display:block;margin:8px 0 4px}
+  input[type=text],input[type=number]{width:100%;padding:6px} button{padding:8px 14px;margin-top:10px}
+  #log{margin-top:10px;white-space:pre-wrap;background:#f6f6f6;padding:10px;border-radius:8px}
+  .err{color:#c00;font-weight:600}
 </style>
-<h1>WebM → PNG Frames (Alpha)</h1>
-<label>Video URL (same origin recommended)</label>
-<input id="url" type="text" placeholder="https://.../MV_Dance04.webm">
+<h1>WebM → PNG (Alpha)</h1>
+<label>Video URL（同一オリジン推奨）</label>
+<input id="url" type="text" value="https://satussy56.github.io/RoadTestWeb/movie/MV_Dance04.webm">
 <label>FPS</label>
 <input id="fps" type="number" value="24" min="1" step="1">
-<button id="pick">フォルダ選択</button>
+<button id="pick">出力フォルダ選択</button>
 <button id="run">Export</button>
 <div id="log"></div>
 
 <script>
-let dirHandle = null;
-const $ = s => document.querySelector(s);
-const log = (...a) => ($('#log').textContent += a.join(' ') + '\n');
+let dirHandle=null; const $=s=>document.querySelector(s);
+const log=(...a)=>{$('#log').textContent+=a.join(' ')+'\n'}
+const elog=(...a)=>{$('#log').innerHTML+=`<div class="err">${a.join(' ')}</div>`}
 
-$('#pick').onclick = async () => {
-  try {
-    dirHandle = await window.showDirectoryPicker();
-    log('保存先フォルダを選択しました。');
-  } catch (e) {
-    log('キャンセルされました。');
-  }
+$('#pick').onclick=async()=>{
+  try{ dirHandle=await window.showDirectoryPicker(); log('保存先フォルダOK'); }
+  catch(e){ elog('フォルダ選択をキャンセル'); }
 };
 
-$('#run').onclick = async () => {
-  const src = $('#url').value.trim();
-  const fps = Math.max(1, parseInt($('#fps').value || '24', 10));
-  if (!src) return alert('Video URL を入れてね');
-  if (!dirHandle) return alert('先に出力フォルダを選んでね');
+$('#run').onclick=async()=>{
+  $('#log').textContent='';
+  if(!('showDirectoryPicker' in window)) return elog('Chrome/Edgeで開いて。Safariは未対応。');
+  const src=$('#url').value.trim(); const fps=Math.max(1,parseInt($('#fps').value||'24',10));
+  if(!src) return elog('Video URL を入れてね');
+  if(!dirHandle) return elog('先に出力フォルダを選んでね');
 
-  // Video要素とCanvas準備
-  const v = document.createElement('video');
-  v.playsInline = true;
-  v.muted = true;
-  v.crossOrigin = 'anonymous'; // 同一オリジンなら不要だが保険
-  v.src = src;
+  const v=document.createElement('video');
+  v.playsInline=true; v.muted=true; v.crossOrigin='anonymous'; v.src=src;
+  try{ await v.play().catch(()=>{});}catch{}
+  await new Promise(r=>v.onloadedmetadata=r);
+  const c=document.createElement('canvas'); c.width=v.videoWidth; c.height=v.videoHeight;
+  const g=c.getContext('2d',{alpha:true,willReadFrequently:true});
 
-  try { await v.play().catch(()=>{}); } catch {}
-  await new Promise(r => v.onloadedmetadata = r);
-  const duration = v.duration;
-  if (!isFinite(duration) || duration <= 0) return alert('動画のdurationが取れない…URLやCORSを確認してね');
-
-  const c = document.createElement('canvas');
-  c.width = v.videoWidth;
-  c.height = v.videoHeight;
-  const g = c.getContext('2d', { alpha: true, willReadFrequently: true });
-
-  log(`解像度: ${c.width}x${c.height}, duration: ${duration.toFixed(3)}s, FPS: ${fps}`);
-
-  const total = Math.ceil(duration * fps);
-  for (let i = 0; i < total; i++) {
-    const t = Math.min((i / fps), duration - 1e-6);
-    await new Promise(resolve => { v.currentTime = t; v.onseeked = resolve; });
+  // 再生できても CORS がNGだとこの時点で取得エラーになる
+  const testDraw=()=>{
     g.clearRect(0,0,c.width,c.height);
-    g.drawImage(v, 0, 0);
+    g.drawImage(v,0,0,1,1);
+    try{ g.getImageData(0,0,1,1); return true; }
+    catch(e){ elog('Canvasが汚染（tainted）されています。→ HTMLと動画を同一オリジンで配信して！'); return false; }
+  };
+  await new Promise(r=>v.oncanplay=r);
+  if(!testDraw()) return;
 
-    const blob = await new Promise(res => c.toBlob(res, 'image/png'));
-    const name = String(i).padStart(6,'0') + '.png';
-    const fileHandle = await dirHandle.getFileHandle(name, { create: true });
-    const writable = await fileHandle.createWritable();
-    await writable.write(blob);
-    await writable.close();
+  const duration=v.duration; if(!isFinite(duration)||duration<=0) return elog('duration取得失敗。URL/CORSを確認してね');
+  log(`解像度 ${c.width}x${c.height}, duration ${duration.toFixed(3)}s, FPS ${fps}`);
 
-    if ((i+1) % Math.max(1, Math.floor(total/20)) === 0 || i === total-1) {
-      log(`saved ${i+1}/${total} (${Math.round(((i+1)/total)*100)}%)`);
+  const total=Math.ceil(duration*fps);
+  for(let i=0;i<total;i++){
+    const t=Math.min(i/fps, duration-1e-6);
+    await new Promise(r=>{ v.currentTime=t; v.onseeked=r; });
+    g.clearRect(0,0,c.width,c.height); g.drawImage(v,0,0);
+    try{
+      const blob=await new Promise((res,rej)=>c.toBlob(b=>b?res(b):rej(new Error('toBlob failed')),'image/png'));
+      const name=String(i).padStart(6,'0')+'.png';
+      const fh=await dirHandle.getFileHandle(name,{create:true});
+      const w=await fh.createWritable(); await w.write(blob); await w.close();
+    }catch(e){
+      elog('書き出しに失敗: '+(e&&e.message?e.message:e));
+      if(e && (''+e).includes('Security')) elog('→ たぶんCORS/同一オリジン問題。');
+      return;
     }
+    if((i+1)%Math.max(1,Math.floor(total/20))===0||i===total-1) log(`saved ${i+1}/${total}`);
   }
   log('完了！');
 };

@@ -1,0 +1,121 @@
+{
+  "name": "Chat Overflow",
+  "bpm": 160,
+  "duration": 154.959979,
+  "ppq": 960,
+  "offsetTicks": 900,
+  "notes": [
+    {
+      "noteName": 2,
+      "noteOctave": 4,
+      "tick": 18300,
+      "tickLength": 960,
+      "beatIndex": 18.125,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 4,
+      "noteOctave": 4,
+      "tick": 20220,
+      "tickLength": 960,
+      "beatIndex": 20.125,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 2,
+      "noteOctave": 4,
+      "tick": 22140,
+      "tickLength": 960,
+      "beatIndex": 22.125,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 4,
+      "noteOctave": 4,
+      "tick": 24060,
+      "tickLength": 960,
+      "beatIndex": 24.125,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 2,
+      "noteOctave": 4,
+      "tick": 25980,
+      "tickLength": 960,
+      "beatIndex": 26.125,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 4,
+      "noteOctave": 4,
+      "tick": 27900,
+      "tickLength": 960,
+      "beatIndex": 28.125,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 2,
+      "noteOctave": 4,
+      "tick": 29820,
+      "tickLength": 960,
+      "beatIndex": 30.125,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 4,
+      "noteOctave": 4,
+      "tick": 31740,
+      "tickLength": 960,
+      "beatIndex": 32.125,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 2,
+      "noteOctave": 4,
+      "tick": 33660,
+      "tickLength": 960,
+      "beatIndex": 34.125,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 4,
+      "noteOctave": 4,
+      "tick": 35580,
+      "tickLength": 960,
+      "beatIndex": 36.125,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 2,
+      "noteOctave": 4,
+      "tick": 37500,
+      "tickLength": 960,
+      "beatIndex": 38.125,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 4,
+      "noteOctave": 4,
+      "tick": 39420,
+      "tickLength": 960,
+      "beatIndex": 40.125,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 2,
+      "noteOctave": 4,
+      "tick": 41340,
+      "tickLength": 3840,
+      "beatIndex": 42.125,
+      "beatLengthIndex": 4
+    },
+    {
+      "noteName": 4,
+      "noteOctave": 4,
+      "tick": 45180,
+      "tickLength": 3840,
+      "beatIndex": 46.125,
+      "beatLengthIndex": 4
+    }
+  ]
+}

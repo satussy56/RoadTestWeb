@@ -1,0 +1,169 @@
+{
+  "name": "ココロノ叫ビのコピー",
+  "bpm": 190,
+  "duration": 154.719979,
+  "ppq": 960,
+  "offsetTicks": -600,
+  "notes": [
+    {
+      "noteName": 2,
+      "noteOctave": 4,
+      "tick": 23640,
+      "tickLength": 960,
+      "beatIndex": 25.25,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 4,
+      "noteOctave": 4,
+      "tick": 25560,
+      "tickLength": 960,
+      "beatIndex": 27.25,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 2,
+      "noteOctave": 4,
+      "tick": 27480,
+      "tickLength": 960,
+      "beatIndex": 29.25,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 4,
+      "noteOctave": 4,
+      "tick": 29400,
+      "tickLength": 960,
+      "beatIndex": 31.25,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 2,
+      "noteOctave": 4,
+      "tick": 31320,
+      "tickLength": 960,
+      "beatIndex": 33.25,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 4,
+      "noteOctave": 4,
+      "tick": 33240,
+      "tickLength": 960,
+      "beatIndex": 35.25,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 2,
+      "noteOctave": 4,
+      "tick": 35160,
+      "tickLength": 960,
+      "beatIndex": 37.25,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 4,
+      "noteOctave": 4,
+      "tick": 37080,
+      "tickLength": 960,
+      "beatIndex": 39.25,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 2,
+      "noteOctave": 4,
+      "tick": 39000,
+      "tickLength": 960,
+      "beatIndex": 41.25,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 4,
+      "noteOctave": 4,
+      "tick": 40920,
+      "tickLength": 960,
+      "beatIndex": 43.25,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 2,
+      "noteOctave": 4,
+      "tick": 42840,
+      "tickLength": 960,
+      "beatIndex": 45.25,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 4,
+      "noteOctave": 4,
+      "tick": 44760,
+      "tickLength": 960,
+      "beatIndex": 47.25,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 2,
+      "noteOctave": 4,
+      "tick": 46680,
+      "tickLength": 960,
+      "beatIndex": 49.25,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 4,
+      "noteOctave": 4,
+      "tick": 47640,
+      "tickLength": 960,
+      "beatIndex": 50.25,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 2,
+      "noteOctave": 4,
+      "tick": 48600,
+      "tickLength": 960,
+      "beatIndex": 51.25,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 4,
+      "noteOctave": 4,
+      "tick": 49560,
+      "tickLength": 960,
+      "beatIndex": 52.25,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 2,
+      "noteOctave": 4,
+      "tick": 50520,
+      "tickLength": 960,
+      "beatIndex": 53.25,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 4,
+      "noteOctave": 4,
+      "tick": 51480,
+      "tickLength": 960,
+      "beatIndex": 54.25,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 2,
+      "noteOctave": 4,
+      "tick": 52440,
+      "tickLength": 960,
+      "beatIndex": 55.25,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 4,
+      "noteOctave": 4,
+      "tick": 53400,
+      "tickLength": 4800,
+      "beatIndex": 56.25,
+      "beatLengthIndex": 5
+    }
+  ]
+}

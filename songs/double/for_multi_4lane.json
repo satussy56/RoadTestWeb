@@ -1,0 +1,521 @@
+{
+    "name": "for_multi_4lane",
+    "bpm": 120,
+    "ppq": 960,
+    "offsetTicks": 0,
+    "laneCount": 4,
+    "notes": [
+        {
+            "noteName": 0,
+            "noteOctave": 4,
+            "time": 0.0,
+            "noteLength": 0.25,
+            "beatIndex": 0.0,
+            "beatLengthIndex": 0.5
+        },
+        {
+            "noteName": 5,
+            "noteOctave": 4,
+            "time": 0.0,
+            "noteLength": 0.25,
+            "beatIndex": 0.0,
+            "beatLengthIndex": 0.5
+        },
+        {
+            "noteName": 0,
+            "noteOctave": 4,
+            "time": 0.5,
+            "noteLength": 0.25,
+            "beatIndex": 1.0,
+            "beatLengthIndex": 0.5
+        },
+        {
+            "noteName": 5,
+            "noteOctave": 4,
+            "time": 0.5,
+            "noteLength": 0.25,
+            "beatIndex": 1.0,
+            "beatLengthIndex": 0.5
+        },
+        {
+            "noteName": 0,
+            "noteOctave": 4,
+            "time": 1.0,
+            "noteLength": 0.25,
+            "beatIndex": 2.0,
+            "beatLengthIndex": 0.5
+        },
+        {
+            "noteName": 5,
+            "noteOctave": 4,
+            "time": 1.0,
+            "noteLength": 0.25,
+            "beatIndex": 2.0,
+            "beatLengthIndex": 0.5
+        },
+        {
+            "noteName": 0,
+            "noteOctave": 4,
+            "time": 1.5,
+            "noteLength": 0.25,
+            "beatIndex": 3.0,
+            "beatLengthIndex": 0.5
+        },
+        {
+            "noteName": 5,
+            "noteOctave": 4,
+            "time": 1.5,
+            "noteLength": 0.25,
+            "beatIndex": 3.0,
+            "beatLengthIndex": 0.5
+        },
+        {
+            "noteName": 0,
+            "noteOctave": 4,
+            "time": 2.0,
+            "noteLength": 0.25,
+            "beatIndex": 4.0,
+            "beatLengthIndex": 0.5
+        },
+        {
+            "noteName": 5,
+            "noteOctave": 4,
+            "time": 2.0,
+            "noteLength": 0.25,
+            "beatIndex": 4.0,
+            "beatLengthIndex": 0.5
+        },
+        {
+            "noteName": 0,
+            "noteOctave": 4,
+            "time": 2.5,
+            "noteLength": 0.25,
+            "beatIndex": 5.0,
+            "beatLengthIndex": 0.5
+        },
+        {
+            "noteName": 5,
+            "noteOctave": 4,
+            "time": 2.5,
+            "noteLength": 0.25,
+            "beatIndex": 5.0,
+            "beatLengthIndex": 0.5
+        },
+        {
+            "noteName": 0,
+            "noteOctave": 4,
+            "time": 3.0,
+            "noteLength": 0.25,
+            "beatIndex": 6.0,
+            "beatLengthIndex": 0.5
+        },
+        {
+            "noteName": 5,
+            "noteOctave": 4,
+            "time": 3.0,
+            "noteLength": 0.25,
+            "beatIndex": 6.0,
+            "beatLengthIndex": 0.5
+        },
+        {
+            "noteName": 0,
+            "noteOctave": 4,
+            "time": 3.5,
+            "noteLength": 0.25,
+            "beatIndex": 7.0,
+            "beatLengthIndex": 0.5
+        },
+        {
+            "noteName": 5,
+            "noteOctave": 4,
+            "time": 3.5,
+            "noteLength": 0.25,
+            "beatIndex": 7.0,
+            "beatLengthIndex": 0.5
+        },
+        {
+            "noteName": 2,
+            "noteOctave": 4,
+            "time": 4.0,
+            "noteLength": 0.25,
+            "beatIndex": 8.0,
+            "beatLengthIndex": 0.5
+        },
+        {
+            "noteName": 5,
+            "noteOctave": 4,
+            "time": 4.0,
+            "noteLength": 0.25,
+            "beatIndex": 8.0,
+            "beatLengthIndex": 0.5
+        },
+        {
+            "noteName": 2,
+            "noteOctave": 4,
+            "time": 4.5,
+            "noteLength": 0.25,
+            "beatIndex": 9.0,
+            "beatLengthIndex": 0.5
+        },
+        {
+            "noteName": 5,
+            "noteOctave": 4,
+            "time": 4.5,
+            "noteLength": 0.25,
+            "beatIndex": 9.0,
+            "beatLengthIndex": 0.5
+        },
+        {
+            "noteName": 2,
+            "noteOctave": 4,
+            "time": 5.0,
+            "noteLength": 0.25,
+            "beatIndex": 10.0,
+            "beatLengthIndex": 0.5
+        },
+        {
+            "noteName": 5,
+            "noteOctave": 4,
+            "time": 5.0,
+            "noteLength": 0.25,
+            "beatIndex": 10.0,
+            "beatLengthIndex": 0.5
+        },
+        {
+            "noteName": 2,
+            "noteOctave": 4,
+            "time": 5.5,
+            "noteLength": 0.25,
+            "beatIndex": 11.0,
+            "beatLengthIndex": 0.5
+        },
+        {
+            "noteName": 5,
+            "noteOctave": 4,
+            "time": 5.5,
+            "noteLength": 0.25,
+            "beatIndex": 11.0,
+            "beatLengthIndex": 0.5
+        },
+        {
+            "noteName": 2,
+            "noteOctave": 4,
+            "time": 6.0,
+            "noteLength": 0.25,
+            "beatIndex": 12.0,
+            "beatLengthIndex": 0.5
+        },
+        {
+            "noteName": 5,
+            "noteOctave": 4,
+            "time": 6.0,
+            "noteLength": 0.25,
+            "beatIndex": 12.0,
+            "beatLengthIndex": 0.5
+        },
+        {
+            "noteName": 2,
+            "noteOctave": 4,
+            "time": 6.5,
+            "noteLength": 0.25,
+            "beatIndex": 13.0,
+            "beatLengthIndex": 0.5
+        },
+        {
+            "noteName": 5,
+            "noteOctave": 4,
+            "time": 6.5,
+            "noteLength": 0.25,
+            "beatIndex": 13.0,
+            "beatLengthIndex": 0.5
+        },
+        {
+            "noteName": 2,
+            "noteOctave": 4,
+            "time": 7.0,
+            "noteLength": 0.25,
+            "beatIndex": 14.0,
+            "beatLengthIndex": 0.5
+        },
+        {
+            "noteName": 5,
+            "noteOctave": 4,
+            "time": 7.0,
+            "noteLength": 0.25,
+            "beatIndex": 14.0,
+            "beatLengthIndex": 0.5
+        },
+        {
+            "noteName": 2,
+            "noteOctave": 4,
+            "time": 7.5,
+            "noteLength": 0.25,
+            "beatIndex": 15.0,
+            "beatLengthIndex": 0.5
+        },
+        {
+            "noteName": 5,
+            "noteOctave": 4,
+            "time": 7.5,
+            "noteLength": 0.25,
+            "beatIndex": 15.0,
+            "beatLengthIndex": 0.5
+        },
+        {
+            "noteName": 0,
+            "noteOctave": 4,
+            "time": 8.0,
+            "noteLength": 0.25,
+            "beatIndex": 16.0,
+            "beatLengthIndex": 0.5
+        },
+        {
+            "noteName": 4,
+            "noteOctave": 4,
+            "time": 8.0,
+            "noteLength": 0.25,
+            "beatIndex": 16.0,
+            "beatLengthIndex": 0.5
+        },
+        {
+            "noteName": 0,
+            "noteOctave": 4,
+            "time": 8.5,
+            "noteLength": 0.25,
+            "beatIndex": 17.0,
+            "beatLengthIndex": 0.5
+        },
+        {
+            "noteName": 4,
+            "noteOctave": 4,
+            "time": 8.5,
+            "noteLength": 0.25,
+            "beatIndex": 17.0,
+            "beatLengthIndex": 0.5
+        },
+        {
+            "noteName": 0,
+            "noteOctave": 4,
+            "time": 9.0,
+            "noteLength": 0.25,
+            "beatIndex": 18.0,
+            "beatLengthIndex": 0.5
+        },
+        {
+            "noteName": 4,
+            "noteOctave": 4,
+            "time": 9.0,
+            "noteLength": 0.25,
+            "beatIndex": 18.0,
+            "beatLengthIndex": 0.5
+        },
+        {
+            "noteName": 0,
+            "noteOctave": 4,
+            "time": 9.5,
+            "noteLength": 0.25,
+            "beatIndex": 19.0,
+            "beatLengthIndex": 0.5
+        },
+        {
+            "noteName": 4,
+            "noteOctave": 4,
+            "time": 9.5,
+            "noteLength": 0.25,
+            "beatIndex": 19.0,
+            "beatLengthIndex": 0.5
+        },
+        {
+            "noteName": 0,
+            "noteOctave": 4,
+            "time": 10.0,
+            "noteLength": 0.25,
+            "beatIndex": 20.0,
+            "beatLengthIndex": 0.5
+        },
+        {
+            "noteName": 4,
+            "noteOctave": 4,
+            "time": 10.0,
+            "noteLength": 0.25,
+            "beatIndex": 20.0,
+            "beatLengthIndex": 0.5
+        },
+        {
+            "noteName": 0,
+            "noteOctave": 4,
+            "time": 10.5,
+            "noteLength": 0.25,
+            "beatIndex": 21.0,
+            "beatLengthIndex": 0.5
+        },
+        {
+            "noteName": 4,
+            "noteOctave": 4,
+            "time": 10.5,
+            "noteLength": 0.25,
+            "beatIndex": 21.0,
+            "beatLengthIndex": 0.5
+        },
+        {
+            "noteName": 0,
+            "noteOctave": 4,
+            "time": 11.0,
+            "noteLength": 0.25,
+            "beatIndex": 22.0,
+            "beatLengthIndex": 0.5
+        },
+        {
+            "noteName": 4,
+            "noteOctave": 4,
+            "time": 11.0,
+            "noteLength": 0.25,
+            "beatIndex": 22.0,
+            "beatLengthIndex": 0.5
+        },
+        {
+            "noteName": 0,
+            "noteOctave": 4,
+            "time": 11.5,
+            "noteLength": 0.25,
+            "beatIndex": 23.0,
+            "beatLengthIndex": 0.5
+        },
+        {
+            "noteName": 4,
+            "noteOctave": 4,
+            "time": 11.5,
+            "noteLength": 0.25,
+            "beatIndex": 23.0,
+            "beatLengthIndex": 0.5
+        },
+        {
+            "noteName": 2,
+            "noteOctave": 4,
+            "time": 12.0,
+            "noteLength": 0.25,
+            "beatIndex": 24.0,
+            "beatLengthIndex": 0.5
+        },
+        {
+            "noteName": 4,
+            "noteOctave": 4,
+            "time": 12.0,
+            "noteLength": 0.25,
+            "beatIndex": 24.0,
+            "beatLengthIndex": 0.5
+        },
+        {
+            "noteName": 2,
+            "noteOctave": 4,
+            "time": 12.5,
+            "noteLength": 0.25,
+            "beatIndex": 25.0,
+            "beatLengthIndex": 0.5
+        },
+        {
+            "noteName": 4,
+            "noteOctave": 4,
+            "time": 12.5,
+            "noteLength": 0.25,
+            "beatIndex": 25.0,
+            "beatLengthIndex": 0.5
+        },
+        {
+            "noteName": 2,
+            "noteOctave": 4,
+            "time": 13.0,
+            "noteLength": 0.25,
+            "beatIndex": 26.0,
+            "beatLengthIndex": 0.5
+        },
+        {
+            "noteName": 4,
+            "noteOctave": 4,
+            "time": 13.0,
+            "noteLength": 0.25,
+            "beatIndex": 26.0,
+            "beatLengthIndex": 0.5
+        },
+        {
+            "noteName": 2,
+            "noteOctave": 4,
+            "time": 13.5,
+            "noteLength": 0.25,
+            "beatIndex": 27.0,
+            "beatLengthIndex": 0.5
+        },
+        {
+            "noteName": 4,
+            "noteOctave": 4,
+            "time": 13.5,
+            "noteLength": 0.25,
+            "beatIndex": 27.0,
+            "beatLengthIndex": 0.5
+        },
+        {
+            "noteName": 2,
+            "noteOctave": 4,
+            "time": 14.0,
+            "noteLength": 0.25,
+            "beatIndex": 28.0,
+            "beatLengthIndex": 0.5
+        },
+        {
+            "noteName": 4,
+            "noteOctave": 4,
+            "time": 14.0,
+            "noteLength": 0.25,
+            "beatIndex": 28.0,
+            "beatLengthIndex": 0.5
+        },
+        {
+            "noteName": 2,
+            "noteOctave": 4,
+            "time": 14.5,
+            "noteLength": 0.25,
+            "beatIndex": 29.0,
+            "beatLengthIndex": 0.5
+        },
+        {
+            "noteName": 4,
+            "noteOctave": 4,
+            "time": 14.5,
+            "noteLength": 0.25,
+            "beatIndex": 29.0,
+            "beatLengthIndex": 0.5
+        },
+        {
+            "noteName": 2,
+            "noteOctave": 4,
+            "time": 15.0,
+            "noteLength": 0.25,
+            "beatIndex": 30.0,
+            "beatLengthIndex": 0.5
+        },
+        {
+            "noteName": 4,
+            "noteOctave": 4,
+            "time": 15.0,
+            "noteLength": 0.25,
+            "beatIndex": 30.0,
+            "beatLengthIndex": 0.5
+        },
+        {
+            "noteName": 2,
+            "noteOctave": 4,
+            "time": 15.5,
+            "noteLength": 0.25,
+            "beatIndex": 31.0,
+            "beatLengthIndex": 0.5
+        },
+        {
+            "noteName": 4,
+            "noteOctave": 4,
+            "time": 15.5,
+            "noteLength": 0.25,
+            "beatIndex": 31.0,
+            "beatLengthIndex": 0.5
+        }
+    ]
+}

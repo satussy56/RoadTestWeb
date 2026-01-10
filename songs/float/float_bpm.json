@@ -1,0 +1,2954 @@
+{
+  "name": "Otaku Girls",
+  "bpm": 139.534884,
+  "duration": 130.324875,
+  "ppq": 960,
+  "laneCount": 5,
+  "offsetTicks": 0,
+  "notes": [
+    {
+      "noteName": 5,
+      "noteOctave": 4,
+      "tick": 13673,
+      "tickLength": 960,
+      "beatIndex": 14.243,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 5,
+      "noteOctave": 4,
+      "tick": 15113,
+      "tickLength": 960,
+      "beatIndex": 15.743,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 5,
+      "noteOctave": 4,
+      "tick": 15593,
+      "tickLength": 960,
+      "beatIndex": 16.243,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 2,
+      "noteOctave": 4,
+      "tick": 16073,
+      "tickLength": 960,
+      "beatIndex": 16.743,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 2,
+      "noteOctave": 4,
+      "tick": 16553,
+      "tickLength": 960,
+      "beatIndex": 17.243,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 0,
+      "noteOctave": 4,
+      "tick": 17033,
+      "tickLength": 960,
+      "beatIndex": 17.743,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 2,
+      "noteOctave": 4,
+      "tick": 17513,
+      "tickLength": 960,
+      "beatIndex": 18.243,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 0,
+      "noteOctave": 4,
+      "tick": 17988,
+      "tickLength": 960,
+      "beatIndex": 18.738,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 0,
+      "noteOctave": 4,
+      "tick": 18462,
+      "tickLength": 960,
+      "beatIndex": 19.231,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 0,
+      "noteOctave": 4,
+      "tick": 24189,
+      "tickLength": 960,
+      "beatIndex": 25.197,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 0,
+      "noteOctave": 4,
+      "tick": 24829,
+      "tickLength": 960,
+      "beatIndex": 25.864,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 2,
+      "noteOctave": 4,
+      "tick": 25149,
+      "tickLength": 960,
+      "beatIndex": 26.197,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 0,
+      "noteOctave": 4,
+      "tick": 25629,
+      "tickLength": 960,
+      "beatIndex": 26.697,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 0,
+      "noteOctave": 4,
+      "tick": 26109,
+      "tickLength": 960,
+      "beatIndex": 27.197,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 0,
+      "noteOctave": 4,
+      "tick": 26829,
+      "tickLength": 960,
+      "beatIndex": 27.947,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 2,
+      "noteOctave": 4,
+      "tick": 27069,
+      "tickLength": 960,
+      "beatIndex": 28.197,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 0,
+      "noteOctave": 4,
+      "tick": 28029,
+      "tickLength": 960,
+      "beatIndex": 29.197,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 0,
+      "noteOctave": 4,
+      "tick": 28669,
+      "tickLength": 960,
+      "beatIndex": 29.864,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 2,
+      "noteOctave": 4,
+      "tick": 28989,
+      "tickLength": 960,
+      "beatIndex": 30.197,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 0,
+      "noteOctave": 4,
+      "tick": 29227,
+      "tickLength": 960,
+      "beatIndex": 30.445,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 0,
+      "noteOctave": 4,
+      "tick": 29705,
+      "tickLength": 960,
+      "beatIndex": 30.943,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 2,
+      "noteOctave": 4,
+      "tick": 29943,
+      "tickLength": 960,
+      "beatIndex": 31.191,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 0,
+      "noteOctave": 4,
+      "tick": 30261,
+      "tickLength": 960,
+      "beatIndex": 31.522,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 2,
+      "noteOctave": 4,
+      "tick": 30579,
+      "tickLength": 960,
+      "beatIndex": 31.853,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 4,
+      "noteOctave": 4,
+      "tick": 30898,
+      "tickLength": 960,
+      "beatIndex": 32.185,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 2,
+      "noteOctave": 4,
+      "tick": 31852,
+      "tickLength": 960,
+      "beatIndex": 33.179,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 0,
+      "noteOctave": 4,
+      "tick": 32170,
+      "tickLength": 960,
+      "beatIndex": 33.51,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 0,
+      "noteOctave": 4,
+      "tick": 32488,
+      "tickLength": 960,
+      "beatIndex": 33.842,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 2,
+      "noteOctave": 4,
+      "tick": 32806,
+      "tickLength": 960,
+      "beatIndex": 34.173,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 0,
+      "noteOctave": 4,
+      "tick": 33126,
+      "tickLength": 960,
+      "beatIndex": 34.506,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 0,
+      "noteOctave": 4,
+      "tick": 33446,
+      "tickLength": 960,
+      "beatIndex": 34.84,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 0,
+      "noteOctave": 4,
+      "tick": 33766,
+      "tickLength": 960,
+      "beatIndex": 35.173,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 0,
+      "noteOctave": 4,
+      "tick": 34086,
+      "tickLength": 960,
+      "beatIndex": 35.506,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 2,
+      "noteOctave": 4,
+      "tick": 34406,
+      "tickLength": 960,
+      "beatIndex": 35.84,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 0,
+      "noteOctave": 4,
+      "tick": 34726,
+      "tickLength": 960,
+      "beatIndex": 36.173,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 2,
+      "noteOctave": 4,
+      "tick": 35046,
+      "tickLength": 960,
+      "beatIndex": 36.506,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 0,
+      "noteOctave": 4,
+      "tick": 35366,
+      "tickLength": 960,
+      "beatIndex": 36.84,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 0,
+      "noteOctave": 4,
+      "tick": 35686,
+      "tickLength": 960,
+      "beatIndex": 37.173,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 0,
+      "noteOctave": 4,
+      "tick": 36326,
+      "tickLength": 960,
+      "beatIndex": 37.84,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 2,
+      "noteOctave": 4,
+      "tick": 36646,
+      "tickLength": 960,
+      "beatIndex": 38.173,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 0,
+      "noteOctave": 4,
+      "tick": 37124,
+      "tickLength": 960,
+      "beatIndex": 38.671,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 2,
+      "noteOctave": 4,
+      "tick": 37601,
+      "tickLength": 960,
+      "beatIndex": 39.168,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 0,
+      "noteOctave": 4,
+      "tick": 38078,
+      "tickLength": 960,
+      "beatIndex": 39.665,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 2,
+      "noteOctave": 4,
+      "tick": 38555,
+      "tickLength": 960,
+      "beatIndex": 40.161,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 4,
+      "noteOctave": 4,
+      "tick": 38794,
+      "tickLength": 960,
+      "beatIndex": 40.41,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 2,
+      "noteOctave": 4,
+      "tick": 39510,
+      "tickLength": 960,
+      "beatIndex": 41.156,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 0,
+      "noteOctave": 4,
+      "tick": 39987,
+      "tickLength": 960,
+      "beatIndex": 41.653,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 0,
+      "noteOctave": 4,
+      "tick": 40464,
+      "tickLength": 960,
+      "beatIndex": 42.15,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 2,
+      "noteOctave": 4,
+      "tick": 40944,
+      "tickLength": 960,
+      "beatIndex": 42.65,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 4,
+      "noteOctave": 4,
+      "tick": 41264,
+      "tickLength": 960,
+      "beatIndex": 42.983,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 2,
+      "noteOctave": 4,
+      "tick": 41904,
+      "tickLength": 960,
+      "beatIndex": 43.65,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 0,
+      "noteOctave": 4,
+      "tick": 42384,
+      "tickLength": 960,
+      "beatIndex": 44.15,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 0,
+      "noteOctave": 4,
+      "tick": 42864,
+      "tickLength": 960,
+      "beatIndex": 44.65,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 2,
+      "noteOctave": 4,
+      "tick": 43344,
+      "tickLength": 960,
+      "beatIndex": 45.15,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 0,
+      "noteOctave": 4,
+      "tick": 43824,
+      "tickLength": 960,
+      "beatIndex": 45.65,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 2,
+      "noteOctave": 4,
+      "tick": 44304,
+      "tickLength": 960,
+      "beatIndex": 46.15,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 0,
+      "noteOctave": 4,
+      "tick": 44784,
+      "tickLength": 960,
+      "beatIndex": 46.65,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 2,
+      "noteOctave": 4,
+      "tick": 45264,
+      "tickLength": 960,
+      "beatIndex": 47.15,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 4,
+      "noteOctave": 4,
+      "tick": 45744,
+      "tickLength": 960,
+      "beatIndex": 47.65,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 4,
+      "noteOctave": 4,
+      "tick": 46224,
+      "tickLength": 960,
+      "beatIndex": 48.15,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 2,
+      "noteOctave": 4,
+      "tick": 47184,
+      "tickLength": 960,
+      "beatIndex": 49.15,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 2,
+      "noteOctave": 4,
+      "tick": 47824,
+      "tickLength": 960,
+      "beatIndex": 49.817,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 0,
+      "noteOctave": 4,
+      "tick": 48461,
+      "tickLength": 960,
+      "beatIndex": 50.48,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 2,
+      "noteOctave": 4,
+      "tick": 48777,
+      "tickLength": 960,
+      "beatIndex": 50.809,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 2,
+      "noteOctave": 4,
+      "tick": 49093,
+      "tickLength": 960,
+      "beatIndex": 51.139,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 0,
+      "noteOctave": 4,
+      "tick": 49568,
+      "tickLength": 960,
+      "beatIndex": 51.633,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 2,
+      "noteOctave": 4,
+      "tick": 50517,
+      "tickLength": 960,
+      "beatIndex": 52.622,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 0,
+      "noteOctave": 4,
+      "tick": 50754,
+      "tickLength": 960,
+      "beatIndex": 52.869,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 2,
+      "noteOctave": 4,
+      "tick": 51070,
+      "tickLength": 960,
+      "beatIndex": 53.198,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 2,
+      "noteOctave": 4,
+      "tick": 51386,
+      "tickLength": 960,
+      "beatIndex": 53.527,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 0,
+      "noteOctave": 4,
+      "tick": 51703,
+      "tickLength": 960,
+      "beatIndex": 53.857,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 2,
+      "noteOctave": 4,
+      "tick": 51940,
+      "tickLength": 960,
+      "beatIndex": 54.104,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 4,
+      "noteOctave": 4,
+      "tick": 52260,
+      "tickLength": 960,
+      "beatIndex": 54.438,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 2,
+      "noteOctave": 4,
+      "tick": 52900,
+      "tickLength": 960,
+      "beatIndex": 55.104,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 0,
+      "noteOctave": 4,
+      "tick": 53380,
+      "tickLength": 960,
+      "beatIndex": 55.604,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 0,
+      "noteOctave": 4,
+      "tick": 53860,
+      "tickLength": 960,
+      "beatIndex": 56.104,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 2,
+      "noteOctave": 4,
+      "tick": 55300,
+      "tickLength": 960,
+      "beatIndex": 57.604,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 5,
+      "noteOctave": 4,
+      "tick": 55780,
+      "tickLength": 960,
+      "beatIndex": 58.104,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 5,
+      "noteOctave": 4,
+      "tick": 57203,
+      "tickLength": 960,
+      "beatIndex": 59.586,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 5,
+      "noteOctave": 4,
+      "tick": 58152,
+      "tickLength": 960,
+      "beatIndex": 60.575,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 5,
+      "noteOctave": 4,
+      "tick": 58627,
+      "tickLength": 960,
+      "beatIndex": 61.07,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 7,
+      "noteOctave": 4,
+      "tick": 59259,
+      "tickLength": 960,
+      "beatIndex": 61.728,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 7,
+      "noteOctave": 4,
+      "tick": 60055,
+      "tickLength": 960,
+      "beatIndex": 62.557,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 7,
+      "noteOctave": 4,
+      "tick": 60535,
+      "tickLength": 960,
+      "beatIndex": 63.057,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 5,
+      "noteOctave": 4,
+      "tick": 61495,
+      "tickLength": 960,
+      "beatIndex": 64.057,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 4,
+      "noteOctave": 4,
+      "tick": 62455,
+      "tickLength": 960,
+      "beatIndex": 65.057,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 2,
+      "noteOctave": 4,
+      "tick": 62935,
+      "tickLength": 960,
+      "beatIndex": 65.557,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 4,
+      "noteOctave": 4,
+      "tick": 63415,
+      "tickLength": 960,
+      "beatIndex": 66.057,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 2,
+      "noteOctave": 4,
+      "tick": 68687,
+      "tickLength": 960,
+      "beatIndex": 71.549,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 2,
+      "noteOctave": 4,
+      "tick": 69164,
+      "tickLength": 960,
+      "beatIndex": 72.046,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 4,
+      "noteOctave": 4,
+      "tick": 70119,
+      "tickLength": 960,
+      "beatIndex": 73.041,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 4,
+      "noteOctave": 4,
+      "tick": 70596,
+      "tickLength": 960,
+      "beatIndex": 73.538,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 5,
+      "noteOctave": 4,
+      "tick": 71073,
+      "tickLength": 960,
+      "beatIndex": 74.034,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 2,
+      "noteOctave": 4,
+      "tick": 72993,
+      "tickLength": 960,
+      "beatIndex": 76.034,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 5,
+      "noteOctave": 4,
+      "tick": 74913,
+      "tickLength": 960,
+      "beatIndex": 78.034,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 2,
+      "noteOctave": 4,
+      "tick": 76833,
+      "tickLength": 960,
+      "beatIndex": 80.034,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 2,
+      "noteOctave": 4,
+      "tick": 78273,
+      "tickLength": 960,
+      "beatIndex": 81.534,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 4,
+      "noteOctave": 4,
+      "tick": 83989,
+      "tickLength": 960,
+      "beatIndex": 87.489,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 5,
+      "noteOctave": 4,
+      "tick": 84469,
+      "tickLength": 960,
+      "beatIndex": 87.989,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 5,
+      "noteOctave": 4,
+      "tick": 84949,
+      "tickLength": 960,
+      "beatIndex": 88.489,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 7,
+      "noteOctave": 4,
+      "tick": 85429,
+      "tickLength": 960,
+      "beatIndex": 88.989,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 5,
+      "noteOctave": 4,
+      "tick": 85909,
+      "tickLength": 960,
+      "beatIndex": 89.489,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 7,
+      "noteOctave": 4,
+      "tick": 87343,
+      "tickLength": 960,
+      "beatIndex": 90.982,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 5,
+      "noteOctave": 4,
+      "tick": 87821,
+      "tickLength": 960,
+      "beatIndex": 91.48,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 7,
+      "noteOctave": 4,
+      "tick": 88298,
+      "tickLength": 960,
+      "beatIndex": 91.977,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 7,
+      "noteOctave": 4,
+      "tick": 88775,
+      "tickLength": 960,
+      "beatIndex": 92.474,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 7,
+      "noteOctave": 4,
+      "tick": 89729,
+      "tickLength": 960,
+      "beatIndex": 93.468,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 7,
+      "noteOctave": 4,
+      "tick": 90687,
+      "tickLength": 960,
+      "beatIndex": 94.466,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 7,
+      "noteOctave": 4,
+      "tick": 91167,
+      "tickLength": 960,
+      "beatIndex": 94.966,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 5,
+      "noteOctave": 4,
+      "tick": 91647,
+      "tickLength": 960,
+      "beatIndex": 95.466,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 7,
+      "noteOctave": 4,
+      "tick": 92127,
+      "tickLength": 960,
+      "beatIndex": 95.966,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 7,
+      "noteOctave": 4,
+      "tick": 92607,
+      "tickLength": 960,
+      "beatIndex": 96.466,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 7,
+      "noteOctave": 4,
+      "tick": 92927,
+      "tickLength": 960,
+      "beatIndex": 96.799,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 5,
+      "noteOctave": 4,
+      "tick": 93567,
+      "tickLength": 960,
+      "beatIndex": 97.466,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 7,
+      "noteOctave": 4,
+      "tick": 94047,
+      "tickLength": 960,
+      "beatIndex": 97.966,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 7,
+      "noteOctave": 4,
+      "tick": 95007,
+      "tickLength": 960,
+      "beatIndex": 98.966,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 5,
+      "noteOctave": 4,
+      "tick": 95967,
+      "tickLength": 960,
+      "beatIndex": 99.966,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 4,
+      "noteOctave": 4,
+      "tick": 96447,
+      "tickLength": 960,
+      "beatIndex": 100.466,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 2,
+      "noteOctave": 4,
+      "tick": 96927,
+      "tickLength": 960,
+      "beatIndex": 100.966,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 2,
+      "noteOctave": 4,
+      "tick": 97407,
+      "tickLength": 960,
+      "beatIndex": 101.466,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 0,
+      "noteOctave": 4,
+      "tick": 97887,
+      "tickLength": 960,
+      "beatIndex": 101.966,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 2,
+      "noteOctave": 4,
+      "tick": 98364,
+      "tickLength": 960,
+      "beatIndex": 102.463,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 2,
+      "noteOctave": 4,
+      "tick": 98841,
+      "tickLength": 960,
+      "beatIndex": 102.959,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 5,
+      "noteOctave": 4,
+      "tick": 99318,
+      "tickLength": 960,
+      "beatIndex": 103.456,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 7,
+      "noteOctave": 4,
+      "tick": 99557,
+      "tickLength": 960,
+      "beatIndex": 103.705,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 7,
+      "noteOctave": 4,
+      "tick": 100273,
+      "tickLength": 960,
+      "beatIndex": 104.451,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 5,
+      "noteOctave": 4,
+      "tick": 100750,
+      "tickLength": 960,
+      "beatIndex": 104.948,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 4,
+      "noteOctave": 4,
+      "tick": 101227,
+      "tickLength": 960,
+      "beatIndex": 105.445,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 5,
+      "noteOctave": 4,
+      "tick": 101705,
+      "tickLength": 960,
+      "beatIndex": 105.943,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 7,
+      "noteOctave": 4,
+      "tick": 102425,
+      "tickLength": 960,
+      "beatIndex": 106.693,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 7,
+      "noteOctave": 4,
+      "tick": 103145,
+      "tickLength": 960,
+      "beatIndex": 107.443,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 5,
+      "noteOctave": 4,
+      "tick": 103625,
+      "tickLength": 960,
+      "beatIndex": 107.943,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 4,
+      "noteOctave": 4,
+      "tick": 104105,
+      "tickLength": 960,
+      "beatIndex": 108.443,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 4,
+      "noteOctave": 4,
+      "tick": 105065,
+      "tickLength": 960,
+      "beatIndex": 109.443,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 5,
+      "noteOctave": 4,
+      "tick": 105545,
+      "tickLength": 960,
+      "beatIndex": 109.943,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 5,
+      "noteOctave": 4,
+      "tick": 106022,
+      "tickLength": 960,
+      "beatIndex": 110.44,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 7,
+      "noteOctave": 4,
+      "tick": 106499,
+      "tickLength": 960,
+      "beatIndex": 110.936,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 7,
+      "noteOctave": 4,
+      "tick": 106976,
+      "tickLength": 960,
+      "beatIndex": 111.433,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 7,
+      "noteOctave": 4,
+      "tick": 107215,
+      "tickLength": 960,
+      "beatIndex": 111.682,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 5,
+      "noteOctave": 4,
+      "tick": 107453,
+      "tickLength": 960,
+      "beatIndex": 111.93,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 4,
+      "noteOctave": 4,
+      "tick": 107931,
+      "tickLength": 960,
+      "beatIndex": 112.428,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 2,
+      "noteOctave": 4,
+      "tick": 108408,
+      "tickLength": 960,
+      "beatIndex": 112.925,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 0,
+      "noteOctave": 4,
+      "tick": 108885,
+      "tickLength": 960,
+      "beatIndex": 113.422,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 0,
+      "noteOctave": 4,
+      "tick": 109362,
+      "tickLength": 960,
+      "beatIndex": 113.919,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 0,
+      "noteOctave": 4,
+      "tick": 109842,
+      "tickLength": 960,
+      "beatIndex": 114.419,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 2,
+      "noteOctave": 4,
+      "tick": 110322,
+      "tickLength": 960,
+      "beatIndex": 114.919,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 0,
+      "noteOctave": 4,
+      "tick": 110802,
+      "tickLength": 960,
+      "beatIndex": 115.419,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 0,
+      "noteOctave": 4,
+      "tick": 111282,
+      "tickLength": 960,
+      "beatIndex": 115.919,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 0,
+      "noteOctave": 4,
+      "tick": 111762,
+      "tickLength": 960,
+      "beatIndex": 116.419,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 2,
+      "noteOctave": 4,
+      "tick": 112242,
+      "tickLength": 960,
+      "beatIndex": 116.919,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 0,
+      "noteOctave": 4,
+      "tick": 112722,
+      "tickLength": 960,
+      "beatIndex": 117.419,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 2,
+      "noteOctave": 4,
+      "tick": 113202,
+      "tickLength": 960,
+      "beatIndex": 117.919,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 2,
+      "noteOctave": 4,
+      "tick": 113680,
+      "tickLength": 960,
+      "beatIndex": 118.417,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 5,
+      "noteOctave": 4,
+      "tick": 114157,
+      "tickLength": 960,
+      "beatIndex": 118.914,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 4,
+      "noteOctave": 4,
+      "tick": 114634,
+      "tickLength": 960,
+      "beatIndex": 119.41,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 5,
+      "noteOctave": 4,
+      "tick": 115111,
+      "tickLength": 960,
+      "beatIndex": 119.907,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 5,
+      "noteOctave": 4,
+      "tick": 115588,
+      "tickLength": 960,
+      "beatIndex": 120.404,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 7,
+      "noteOctave": 4,
+      "tick": 116066,
+      "tickLength": 960,
+      "beatIndex": 120.902,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 5,
+      "noteOctave": 4,
+      "tick": 116543,
+      "tickLength": 960,
+      "beatIndex": 121.399,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 7,
+      "noteOctave": 4,
+      "tick": 117020,
+      "tickLength": 960,
+      "beatIndex": 121.896,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 7,
+      "noteOctave": 4,
+      "tick": 117497,
+      "tickLength": 960,
+      "beatIndex": 122.393,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 5,
+      "noteOctave": 4,
+      "tick": 118452,
+      "tickLength": 960,
+      "beatIndex": 123.388,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 7,
+      "noteOctave": 4,
+      "tick": 118929,
+      "tickLength": 960,
+      "beatIndex": 123.884,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 7,
+      "noteOctave": 4,
+      "tick": 119406,
+      "tickLength": 960,
+      "beatIndex": 124.381,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 5,
+      "noteOctave": 4,
+      "tick": 120361,
+      "tickLength": 960,
+      "beatIndex": 125.376,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 7,
+      "noteOctave": 4,
+      "tick": 120838,
+      "tickLength": 960,
+      "beatIndex": 125.873,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 7,
+      "noteOctave": 4,
+      "tick": 121803,
+      "tickLength": 960,
+      "beatIndex": 126.878,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 5,
+      "noteOctave": 4,
+      "tick": 122286,
+      "tickLength": 960,
+      "beatIndex": 127.381,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 7,
+      "noteOctave": 4,
+      "tick": 122769,
+      "tickLength": 960,
+      "beatIndex": 127.884,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 7,
+      "noteOctave": 4,
+      "tick": 123252,
+      "tickLength": 960,
+      "beatIndex": 128.387,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 7,
+      "noteOctave": 4,
+      "tick": 123735,
+      "tickLength": 960,
+      "beatIndex": 128.891,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 5,
+      "noteOctave": 4,
+      "tick": 124217,
+      "tickLength": 960,
+      "beatIndex": 129.393,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 7,
+      "noteOctave": 4,
+      "tick": 124700,
+      "tickLength": 960,
+      "beatIndex": 129.896,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 7,
+      "noteOctave": 4,
+      "tick": 125175,
+      "tickLength": 960,
+      "beatIndex": 130.391,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 7,
+      "noteOctave": 4,
+      "tick": 125649,
+      "tickLength": 960,
+      "beatIndex": 130.884,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 5,
+      "noteOctave": 4,
+      "tick": 126598,
+      "tickLength": 960,
+      "beatIndex": 131.873,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 4,
+      "noteOctave": 4,
+      "tick": 127072,
+      "tickLength": 960,
+      "beatIndex": 132.367,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 2,
+      "noteOctave": 4,
+      "tick": 128021,
+      "tickLength": 960,
+      "beatIndex": 133.355,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 2,
+      "noteOctave": 4,
+      "tick": 129936,
+      "tickLength": 960,
+      "beatIndex": 135.35,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 2,
+      "noteOctave": 4,
+      "tick": 130416,
+      "tickLength": 960,
+      "beatIndex": 135.85,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 2,
+      "noteOctave": 4,
+      "tick": 131376,
+      "tickLength": 960,
+      "beatIndex": 136.85,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 4,
+      "noteOctave": 4,
+      "tick": 132336,
+      "tickLength": 960,
+      "beatIndex": 137.85,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 2,
+      "noteOctave": 4,
+      "tick": 133767,
+      "tickLength": 960,
+      "beatIndex": 139.341,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 2,
+      "noteOctave": 4,
+      "tick": 134245,
+      "tickLength": 960,
+      "beatIndex": 139.839,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 2,
+      "noteOctave": 4,
+      "tick": 134722,
+      "tickLength": 960,
+      "beatIndex": 140.335,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 4,
+      "noteOctave": 4,
+      "tick": 135199,
+      "tickLength": 960,
+      "beatIndex": 140.832,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 4,
+      "noteOctave": 4,
+      "tick": 135676,
+      "tickLength": 960,
+      "beatIndex": 141.329,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 5,
+      "noteOctave": 4,
+      "tick": 136154,
+      "tickLength": 960,
+      "beatIndex": 141.827,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 7,
+      "noteOctave": 4,
+      "tick": 137114,
+      "tickLength": 960,
+      "beatIndex": 142.827,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 5,
+      "noteOctave": 4,
+      "tick": 138074,
+      "tickLength": 960,
+      "beatIndex": 143.827,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 4,
+      "noteOctave": 4,
+      "tick": 139514,
+      "tickLength": 960,
+      "beatIndex": 145.327,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 2,
+      "noteOctave": 4,
+      "tick": 139994,
+      "tickLength": 960,
+      "beatIndex": 145.827,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 2,
+      "noteOctave": 4,
+      "tick": 140471,
+      "tickLength": 960,
+      "beatIndex": 146.324,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 2,
+      "noteOctave": 4,
+      "tick": 141425,
+      "tickLength": 960,
+      "beatIndex": 147.318,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 4,
+      "noteOctave": 4,
+      "tick": 141902,
+      "tickLength": 960,
+      "beatIndex": 147.815,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 2,
+      "noteOctave": 4,
+      "tick": 142380,
+      "tickLength": 960,
+      "beatIndex": 148.313,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 0,
+      "noteOctave": 4,
+      "tick": 143334,
+      "tickLength": 960,
+      "beatIndex": 149.306,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 0,
+      "noteOctave": 4,
+      "tick": 144294,
+      "tickLength": 960,
+      "beatIndex": 150.306,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 0,
+      "noteOctave": 4,
+      "tick": 146225,
+      "tickLength": 960,
+      "beatIndex": 152.318,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 0,
+      "noteOctave": 4,
+      "tick": 146708,
+      "tickLength": 960,
+      "beatIndex": 152.821,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 0,
+      "noteOctave": 4,
+      "tick": 147191,
+      "tickLength": 960,
+      "beatIndex": 153.324,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 0,
+      "noteOctave": 4,
+      "tick": 147674,
+      "tickLength": 960,
+      "beatIndex": 153.827,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 0,
+      "noteOctave": 4,
+      "tick": 148154,
+      "tickLength": 960,
+      "beatIndex": 154.327,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 0,
+      "noteOctave": 4,
+      "tick": 148394,
+      "tickLength": 960,
+      "beatIndex": 154.577,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 0,
+      "noteOctave": 4,
+      "tick": 148874,
+      "tickLength": 960,
+      "beatIndex": 155.077,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 0,
+      "noteOctave": 4,
+      "tick": 149354,
+      "tickLength": 960,
+      "beatIndex": 155.577,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 0,
+      "noteOctave": 4,
+      "tick": 149594,
+      "tickLength": 960,
+      "beatIndex": 155.827,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 2,
+      "noteOctave": 4,
+      "tick": 149834,
+      "tickLength": 960,
+      "beatIndex": 156.077,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 0,
+      "noteOctave": 4,
+      "tick": 150074,
+      "tickLength": 960,
+      "beatIndex": 156.327,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 2,
+      "noteOctave": 4,
+      "tick": 150554,
+      "tickLength": 960,
+      "beatIndex": 156.827,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 0,
+      "noteOctave": 4,
+      "tick": 151034,
+      "tickLength": 960,
+      "beatIndex": 157.327,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 2,
+      "noteOctave": 4,
+      "tick": 151274,
+      "tickLength": 960,
+      "beatIndex": 157.577,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 0,
+      "noteOctave": 4,
+      "tick": 151988,
+      "tickLength": 960,
+      "beatIndex": 158.321,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 2,
+      "noteOctave": 4,
+      "tick": 152225,
+      "tickLength": 960,
+      "beatIndex": 158.568,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 0,
+      "noteOctave": 4,
+      "tick": 152937,
+      "tickLength": 960,
+      "beatIndex": 159.309,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 2,
+      "noteOctave": 4,
+      "tick": 153411,
+      "tickLength": 960,
+      "beatIndex": 159.803,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 4,
+      "noteOctave": 4,
+      "tick": 153886,
+      "tickLength": 960,
+      "beatIndex": 160.298,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 2,
+      "noteOctave": 4,
+      "tick": 154835,
+      "tickLength": 960,
+      "beatIndex": 161.286,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 0,
+      "noteOctave": 4,
+      "tick": 155309,
+      "tickLength": 960,
+      "beatIndex": 161.78,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 0,
+      "noteOctave": 4,
+      "tick": 155786,
+      "tickLength": 960,
+      "beatIndex": 162.277,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 0,
+      "noteOctave": 4,
+      "tick": 156025,
+      "tickLength": 960,
+      "beatIndex": 162.526,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 0,
+      "noteOctave": 4,
+      "tick": 156502,
+      "tickLength": 960,
+      "beatIndex": 163.023,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 0,
+      "noteOctave": 4,
+      "tick": 156741,
+      "tickLength": 960,
+      "beatIndex": 163.272,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 0,
+      "noteOctave": 4,
+      "tick": 156979,
+      "tickLength": 960,
+      "beatIndex": 163.52,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 0,
+      "noteOctave": 4,
+      "tick": 157457,
+      "tickLength": 960,
+      "beatIndex": 164.018,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 0,
+      "noteOctave": 4,
+      "tick": 157695,
+      "tickLength": 960,
+      "beatIndex": 164.266,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 0,
+      "noteOctave": 4,
+      "tick": 157934,
+      "tickLength": 960,
+      "beatIndex": 164.515,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 0,
+      "noteOctave": 4,
+      "tick": 158172,
+      "tickLength": 960,
+      "beatIndex": 164.763,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 0,
+      "noteOctave": 4,
+      "tick": 158491,
+      "tickLength": 960,
+      "beatIndex": 165.095,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 0,
+      "noteOctave": 4,
+      "tick": 159127,
+      "tickLength": 960,
+      "beatIndex": 165.757,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 0,
+      "noteOctave": 4,
+      "tick": 159607,
+      "tickLength": 960,
+      "beatIndex": 166.257,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 0,
+      "noteOctave": 4,
+      "tick": 160087,
+      "tickLength": 960,
+      "beatIndex": 166.757,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 0,
+      "noteOctave": 4,
+      "tick": 160327,
+      "tickLength": 960,
+      "beatIndex": 167.007,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 0,
+      "noteOctave": 4,
+      "tick": 160567,
+      "tickLength": 960,
+      "beatIndex": 167.257,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 0,
+      "noteOctave": 4,
+      "tick": 160807,
+      "tickLength": 960,
+      "beatIndex": 167.507,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 2,
+      "noteOctave": 4,
+      "tick": 161287,
+      "tickLength": 960,
+      "beatIndex": 168.007,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 0,
+      "noteOctave": 4,
+      "tick": 161767,
+      "tickLength": 960,
+      "beatIndex": 168.507,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 0,
+      "noteOctave": 4,
+      "tick": 162007,
+      "tickLength": 960,
+      "beatIndex": 168.757,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 0,
+      "noteOctave": 4,
+      "tick": 162487,
+      "tickLength": 960,
+      "beatIndex": 169.257,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 0,
+      "noteOctave": 4,
+      "tick": 162727,
+      "tickLength": 960,
+      "beatIndex": 169.507,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 0,
+      "noteOctave": 4,
+      "tick": 162967,
+      "tickLength": 960,
+      "beatIndex": 169.757,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 0,
+      "noteOctave": 4,
+      "tick": 163444,
+      "tickLength": 960,
+      "beatIndex": 170.254,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 0,
+      "noteOctave": 4,
+      "tick": 163762,
+      "tickLength": 960,
+      "beatIndex": 170.585,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 0,
+      "noteOctave": 4,
+      "tick": 164080,
+      "tickLength": 960,
+      "beatIndex": 170.917,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 0,
+      "noteOctave": 4,
+      "tick": 164399,
+      "tickLength": 960,
+      "beatIndex": 171.249,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 0,
+      "noteOctave": 4,
+      "tick": 164876,
+      "tickLength": 960,
+      "beatIndex": 171.746,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 0,
+      "noteOctave": 4,
+      "tick": 165194,
+      "tickLength": 960,
+      "beatIndex": 172.077,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 0,
+      "noteOctave": 4,
+      "tick": 165512,
+      "tickLength": 960,
+      "beatIndex": 172.408,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 0,
+      "noteOctave": 4,
+      "tick": 165830,
+      "tickLength": 960,
+      "beatIndex": 172.74,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 0,
+      "noteOctave": 4,
+      "tick": 166148,
+      "tickLength": 960,
+      "beatIndex": 173.071,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 0,
+      "noteOctave": 4,
+      "tick": 166467,
+      "tickLength": 960,
+      "beatIndex": 173.403,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 0,
+      "noteOctave": 4,
+      "tick": 166785,
+      "tickLength": 960,
+      "beatIndex": 173.734,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 0,
+      "noteOctave": 4,
+      "tick": 167262,
+      "tickLength": 960,
+      "beatIndex": 174.231,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 0,
+      "noteOctave": 4,
+      "tick": 167580,
+      "tickLength": 960,
+      "beatIndex": 174.563,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 0,
+      "noteOctave": 4,
+      "tick": 167898,
+      "tickLength": 960,
+      "beatIndex": 174.894,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 0,
+      "noteOctave": 4,
+      "tick": 168216,
+      "tickLength": 960,
+      "beatIndex": 175.225,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 2,
+      "noteOctave": 4,
+      "tick": 168694,
+      "tickLength": 960,
+      "beatIndex": 175.723,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 4,
+      "noteOctave": 4,
+      "tick": 168932,
+      "tickLength": 960,
+      "beatIndex": 175.971,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 2,
+      "noteOctave": 4,
+      "tick": 169648,
+      "tickLength": 960,
+      "beatIndex": 176.717,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 0,
+      "noteOctave": 4,
+      "tick": 170125,
+      "tickLength": 960,
+      "beatIndex": 177.214,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 0,
+      "noteOctave": 4,
+      "tick": 170603,
+      "tickLength": 960,
+      "beatIndex": 177.711,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 0,
+      "noteOctave": 4,
+      "tick": 171083,
+      "tickLength": 960,
+      "beatIndex": 178.211,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 0,
+      "noteOctave": 4,
+      "tick": 171323,
+      "tickLength": 960,
+      "beatIndex": 178.461,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 0,
+      "noteOctave": 4,
+      "tick": 172043,
+      "tickLength": 960,
+      "beatIndex": 179.211,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 0,
+      "noteOctave": 4,
+      "tick": 172523,
+      "tickLength": 960,
+      "beatIndex": 179.711,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 0,
+      "noteOctave": 4,
+      "tick": 173003,
+      "tickLength": 960,
+      "beatIndex": 180.211,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 2,
+      "noteOctave": 4,
+      "tick": 173483,
+      "tickLength": 960,
+      "beatIndex": 180.711,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 0,
+      "noteOctave": 4,
+      "tick": 173963,
+      "tickLength": 960,
+      "beatIndex": 181.211,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 2,
+      "noteOctave": 4,
+      "tick": 174443,
+      "tickLength": 960,
+      "beatIndex": 181.711,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 0,
+      "noteOctave": 4,
+      "tick": 174683,
+      "tickLength": 960,
+      "beatIndex": 181.961,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 0,
+      "noteOctave": 4,
+      "tick": 175163,
+      "tickLength": 960,
+      "beatIndex": 182.461,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 2,
+      "noteOctave": 4,
+      "tick": 175883,
+      "tickLength": 960,
+      "beatIndex": 183.211,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 0,
+      "noteOctave": 4,
+      "tick": 176363,
+      "tickLength": 960,
+      "beatIndex": 183.711,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 2,
+      "noteOctave": 4,
+      "tick": 177803,
+      "tickLength": 960,
+      "beatIndex": 185.211,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 5,
+      "noteOctave": 4,
+      "tick": 178283,
+      "tickLength": 960,
+      "beatIndex": 185.711,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 7,
+      "noteOctave": 4,
+      "tick": 179237,
+      "tickLength": 960,
+      "beatIndex": 186.705,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 7,
+      "noteOctave": 4,
+      "tick": 179714,
+      "tickLength": 960,
+      "beatIndex": 187.202,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 5,
+      "noteOctave": 4,
+      "tick": 180669,
+      "tickLength": 960,
+      "beatIndex": 188.197,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 7,
+      "noteOctave": 4,
+      "tick": 181146,
+      "tickLength": 960,
+      "beatIndex": 188.694,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 7,
+      "noteOctave": 4,
+      "tick": 181623,
+      "tickLength": 960,
+      "beatIndex": 189.191,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 7,
+      "noteOctave": 4,
+      "tick": 182578,
+      "tickLength": 960,
+      "beatIndex": 190.185,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 7,
+      "noteOctave": 4,
+      "tick": 183055,
+      "tickLength": 960,
+      "beatIndex": 190.682,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 7,
+      "noteOctave": 4,
+      "tick": 184009,
+      "tickLength": 960,
+      "beatIndex": 191.676,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 5,
+      "noteOctave": 4,
+      "tick": 184486,
+      "tickLength": 960,
+      "beatIndex": 192.173,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 4,
+      "noteOctave": 4,
+      "tick": 184964,
+      "tickLength": 960,
+      "beatIndex": 192.671,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 2,
+      "noteOctave": 4,
+      "tick": 185441,
+      "tickLength": 960,
+      "beatIndex": 193.168,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 4,
+      "noteOctave": 4,
+      "tick": 185918,
+      "tickLength": 960,
+      "beatIndex": 193.665,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 2,
+      "noteOctave": 4,
+      "tick": 191182,
+      "tickLength": 960,
+      "beatIndex": 199.148,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 2,
+      "noteOctave": 4,
+      "tick": 191656,
+      "tickLength": 960,
+      "beatIndex": 199.642,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 4,
+      "noteOctave": 4,
+      "tick": 192605,
+      "tickLength": 960,
+      "beatIndex": 200.63,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 5,
+      "noteOctave": 4,
+      "tick": 193079,
+      "tickLength": 960,
+      "beatIndex": 201.124,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 5,
+      "noteOctave": 4,
+      "tick": 193554,
+      "tickLength": 960,
+      "beatIndex": 201.619,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 2,
+      "noteOctave": 4,
+      "tick": 194994,
+      "tickLength": 960,
+      "beatIndex": 203.119,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 2,
+      "noteOctave": 4,
+      "tick": 196434,
+      "tickLength": 960,
+      "beatIndex": 204.619,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 2,
+      "noteOctave": 4,
+      "tick": 196914,
+      "tickLength": 960,
+      "beatIndex": 205.119,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 4,
+      "noteOctave": 4,
+      "tick": 197394,
+      "tickLength": 960,
+      "beatIndex": 205.619,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 2,
+      "noteOctave": 4,
+      "tick": 201234,
+      "tickLength": 960,
+      "beatIndex": 209.619,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 4,
+      "noteOctave": 4,
+      "tick": 206505,
+      "tickLength": 960,
+      "beatIndex": 215.109,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 5,
+      "noteOctave": 4,
+      "tick": 206983,
+      "tickLength": 960,
+      "beatIndex": 215.607,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 5,
+      "noteOctave": 4,
+      "tick": 207460,
+      "tickLength": 960,
+      "beatIndex": 216.104,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 5,
+      "noteOctave": 4,
+      "tick": 207937,
+      "tickLength": 960,
+      "beatIndex": 216.601,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 4,
+      "noteOctave": 4,
+      "tick": 208414,
+      "tickLength": 960,
+      "beatIndex": 217.098,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 4,
+      "noteOctave": 4,
+      "tick": 208892,
+      "tickLength": 960,
+      "beatIndex": 217.596,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 5,
+      "noteOctave": 4,
+      "tick": 209369,
+      "tickLength": 960,
+      "beatIndex": 218.093,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 7,
+      "noteOctave": 4,
+      "tick": 209846,
+      "tickLength": 960,
+      "beatIndex": 218.59,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 5,
+      "noteOctave": 4,
+      "tick": 210323,
+      "tickLength": 960,
+      "beatIndex": 219.086,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 7,
+      "noteOctave": 4,
+      "tick": 210800,
+      "tickLength": 960,
+      "beatIndex": 219.583,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 7,
+      "noteOctave": 4,
+      "tick": 211278,
+      "tickLength": 960,
+      "beatIndex": 220.081,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 7,
+      "noteOctave": 4,
+      "tick": 211755,
+      "tickLength": 960,
+      "beatIndex": 220.578,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 7,
+      "noteOctave": 4,
+      "tick": 212232,
+      "tickLength": 960,
+      "beatIndex": 221.075,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 7,
+      "noteOctave": 4,
+      "tick": 213189,
+      "tickLength": 960,
+      "beatIndex": 222.072,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 5,
+      "noteOctave": 4,
+      "tick": 214149,
+      "tickLength": 960,
+      "beatIndex": 223.072,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 7,
+      "noteOctave": 4,
+      "tick": 214629,
+      "tickLength": 960,
+      "beatIndex": 223.572,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 5,
+      "noteOctave": 4,
+      "tick": 215109,
+      "tickLength": 960,
+      "beatIndex": 224.072,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 5,
+      "noteOctave": 4,
+      "tick": 215589,
+      "tickLength": 960,
+      "beatIndex": 224.572,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 4,
+      "noteOctave": 4,
+      "tick": 216069,
+      "tickLength": 960,
+      "beatIndex": 225.072,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 5,
+      "noteOctave": 4,
+      "tick": 216549,
+      "tickLength": 960,
+      "beatIndex": 225.572,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 5,
+      "noteOctave": 4,
+      "tick": 217504,
+      "tickLength": 960,
+      "beatIndex": 226.567,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 4,
+      "noteOctave": 4,
+      "tick": 218458,
+      "tickLength": 960,
+      "beatIndex": 227.56,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 2,
+      "noteOctave": 4,
+      "tick": 218935,
+      "tickLength": 960,
+      "beatIndex": 228.057,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 0,
+      "noteOctave": 4,
+      "tick": 219890,
+      "tickLength": 960,
+      "beatIndex": 229.052,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 2,
+      "noteOctave": 4,
+      "tick": 220367,
+      "tickLength": 960,
+      "beatIndex": 229.549,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 2,
+      "noteOctave": 4,
+      "tick": 221799,
+      "tickLength": 960,
+      "beatIndex": 231.041,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 2,
+      "noteOctave": 4,
+      "tick": 222276,
+      "tickLength": 960,
+      "beatIndex": 231.538,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 0,
+      "noteOctave": 4,
+      "tick": 223708,
+      "tickLength": 960,
+      "beatIndex": 233.029,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 2,
+      "noteOctave": 4,
+      "tick": 224185,
+      "tickLength": 960,
+      "beatIndex": 233.526,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 4,
+      "noteOctave": 4,
+      "tick": 224662,
+      "tickLength": 960,
+      "beatIndex": 234.023,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 2,
+      "noteOctave": 4,
+      "tick": 225617,
+      "tickLength": 960,
+      "beatIndex": 235.018,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 4,
+      "noteOctave": 4,
+      "tick": 226094,
+      "tickLength": 960,
+      "beatIndex": 235.515,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 4,
+      "noteOctave": 4,
+      "tick": 227048,
+      "tickLength": 960,
+      "beatIndex": 236.508,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 5,
+      "noteOctave": 4,
+      "tick": 227526,
+      "tickLength": 960,
+      "beatIndex": 237.006,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 7,
+      "noteOctave": 4,
+      "tick": 228486,
+      "tickLength": 960,
+      "beatIndex": 238.006,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 5,
+      "noteOctave": 4,
+      "tick": 228968,
+      "tickLength": 960,
+      "beatIndex": 238.508,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 7,
+      "noteOctave": 4,
+      "tick": 230899,
+      "tickLength": 960,
+      "beatIndex": 240.52,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 7,
+      "noteOctave": 4,
+      "tick": 231382,
+      "tickLength": 960,
+      "beatIndex": 241.023,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 5,
+      "noteOctave": 4,
+      "tick": 231865,
+      "tickLength": 960,
+      "beatIndex": 241.526,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 7,
+      "noteOctave": 4,
+      "tick": 232819,
+      "tickLength": 960,
+      "beatIndex": 242.52,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 7,
+      "noteOctave": 4,
+      "tick": 233297,
+      "tickLength": 960,
+      "beatIndex": 243.018,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 5,
+      "noteOctave": 4,
+      "tick": 233774,
+      "tickLength": 960,
+      "beatIndex": 243.515,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 7,
+      "noteOctave": 4,
+      "tick": 234251,
+      "tickLength": 960,
+      "beatIndex": 244.011,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 7,
+      "noteOctave": 4,
+      "tick": 234490,
+      "tickLength": 960,
+      "beatIndex": 244.26,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 5,
+      "noteOctave": 4,
+      "tick": 234808,
+      "tickLength": 960,
+      "beatIndex": 244.592,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 7,
+      "noteOctave": 4,
+      "tick": 235126,
+      "tickLength": 960,
+      "beatIndex": 244.923,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 7,
+      "noteOctave": 4,
+      "tick": 235444,
+      "tickLength": 960,
+      "beatIndex": 245.254,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 7,
+      "noteOctave": 4,
+      "tick": 235683,
+      "tickLength": 960,
+      "beatIndex": 245.503,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 7,
+      "noteOctave": 4,
+      "tick": 242381,
+      "tickLength": 960,
+      "beatIndex": 252.48,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 7,
+      "noteOctave": 4,
+      "tick": 243818,
+      "tickLength": 960,
+      "beatIndex": 253.977,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 7,
+      "noteOctave": 4,
+      "tick": 245249,
+      "tickLength": 960,
+      "beatIndex": 255.468,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 5,
+      "noteOctave": 4,
+      "tick": 245727,
+      "tickLength": 960,
+      "beatIndex": 255.966,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 4,
+      "noteOctave": 4,
+      "tick": 246204,
+      "tickLength": 960,
+      "beatIndex": 256.462,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 5,
+      "noteOctave": 4,
+      "tick": 247158,
+      "tickLength": 960,
+      "beatIndex": 257.456,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 4,
+      "noteOctave": 4,
+      "tick": 248118,
+      "tickLength": 960,
+      "beatIndex": 258.456,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 5,
+      "noteOctave": 4,
+      "tick": 253862,
+      "tickLength": 960,
+      "beatIndex": 264.44,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 4,
+      "noteOctave": 4,
+      "tick": 254816,
+      "tickLength": 960,
+      "beatIndex": 265.433,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 2,
+      "noteOctave": 4,
+      "tick": 255771,
+      "tickLength": 960,
+      "beatIndex": 266.428,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 7,
+      "noteOctave": 4,
+      "tick": 260074,
+      "tickLength": 960,
+      "beatIndex": 270.91,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 7,
+      "noteOctave": 4,
+      "tick": 261514,
+      "tickLength": 960,
+      "beatIndex": 272.41,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 5,
+      "noteOctave": 4,
+      "tick": 261994,
+      "tickLength": 960,
+      "beatIndex": 272.91,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 4,
+      "noteOctave": 4,
+      "tick": 262474,
+      "tickLength": 960,
+      "beatIndex": 273.41,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 2,
+      "noteOctave": 4,
+      "tick": 262951,
+      "tickLength": 960,
+      "beatIndex": 273.907,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 2,
+      "noteOctave": 4,
+      "tick": 263428,
+      "tickLength": 960,
+      "beatIndex": 274.404,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 2,
+      "noteOctave": 4,
+      "tick": 263906,
+      "tickLength": 960,
+      "beatIndex": 274.902,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 4,
+      "noteOctave": 4,
+      "tick": 264383,
+      "tickLength": 960,
+      "beatIndex": 275.399,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 2,
+      "noteOctave": 4,
+      "tick": 265337,
+      "tickLength": 960,
+      "beatIndex": 276.393,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 0,
+      "noteOctave": 4,
+      "tick": 265815,
+      "tickLength": 960,
+      "beatIndex": 276.891,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 2,
+      "noteOctave": 4,
+      "tick": 266772,
+      "tickLength": 960,
+      "beatIndex": 277.888,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 2,
+      "noteOctave": 4,
+      "tick": 267732,
+      "tickLength": 960,
+      "beatIndex": 278.888,
+      "beatLengthIndex": 1
+    },
+    {
+      "noteName": 0,
+      "noteOctave": 4,
+      "tick": 269172,
+      "tickLength": 960,
+      "beatIndex": 280.388,
+      "beatLengthIndex": 1
+    }
+  ]
+}

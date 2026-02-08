@@ -8,7 +8,7 @@
             "time": 1.5,
             "noteLength": 0.1875,
             "beatIndex": 4.0,
-            "beatLengthIndex": 0.5
+            "beatLengthIndex": 0.3
         },
         {
             "noteName": 4,
@@ -128,7 +128,7 @@
             "time": 9.75,
             "noteLength": 0.1875,
             "beatIndex": 26.0,
-            "beatLengthIndex": 0.5
+            "beatLengthIndex": 0.9
         },
         {
             "noteName": 4,

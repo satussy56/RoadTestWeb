@@ -1,0 +1,22 @@
+{
+  "name": "Tutorial - Paddle Basics",
+  "bpm": 160,
+  "laneCount": 3,
+  "ppq": 480,
+  "offsetTicks": 0,
+  "notes": [
+    { "noteName": 2, "noteOctave": 4, "beatIndex": 4.0,  "beatLengthIndex": 0.5, "time": 1.5,    "noteLength": 0.1875 },
+    { "noteName": 2, "noteOctave": 4, "beatIndex": 8.0,  "beatLengthIndex": 0.5, "time": 3.0,    "noteLength": 0.1875 },
+    { "noteName": 2, "noteOctave": 4, "beatIndex": 12.0, "beatLengthIndex": 0.5, "time": 4.5,    "noteLength": 0.1875 },
+
+    { "noteName": 2, "noteOctave": 4, "beatIndex": 28.0, "beatLengthIndex": 0.5, "time": 10.5,   "noteLength": 0.1875 },
+    { "noteName": 0, "noteOctave": 4, "beatIndex": 32.0, "beatLengthIndex": 0.5, "time": 12.0,   "noteLength": 0.1875 },
+    { "noteName": 2, "noteOctave": 4, "beatIndex": 36.0, "beatLengthIndex": 0.5, "time": 13.5,   "noteLength": 0.1875 },
+
+    { "noteName": 0, "noteOctave": 4, "beatIndex": 52.0, "beatLengthIndex": 0.5, "time": 19.5,   "noteLength": 0.1875 },
+    { "noteName": 4, "noteOctave": 4, "beatIndex": 56.0, "beatLengthIndex": 0.5, "time": 21.0,   "noteLength": 0.1875 },
+    { "noteName": 0, "noteOctave": 4, "beatIndex": 60.0, "beatLengthIndex": 0.5, "time": 22.5,   "noteLength": 0.1875 },
+    { "noteName": 4, "noteOctave": 4, "beatIndex": 64.0, "beatLengthIndex": 0.5, "time": 24.0,   "noteLength": 0.1875 },
+    { "noteName": 0, "noteOctave": 4, "beatIndex": 68.0, "beatLengthIndex": 0.5, "time": 25.5,   "noteLength": 0.1875 }
+  ]
+}
